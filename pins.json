@@ -1,0 +1,52 @@
+[
+  {
+    "bin": "Game",
+    "va": "0x6a3da5",
+    "label": "Country validator 02\u2192FF (LIVE patched)"
+  },
+  {
+    "bin": "Game",
+    "va": "0x6a2400",
+    "label": "Game_RefValidator (Country vectors)"
+  },
+  {
+    "bin": "Game",
+    "va": "0x6a2a48",
+    "label": "CountryVector_Bounds16 (prime)"
+  },
+  {
+    "bin": "Game",
+    "va": "0x6a2b70",
+    "label": "CountryGate32 (jae graceful fail)"
+  },
+  {
+    "bin": "Game",
+    "va": "0x6a2b99",
+    "label": "deep-stack proof site"
+  },
+  {
+    "bin": "Game",
+    "va": "0x59c4e0",
+    "label": "Mastery_Level_Check 330/240"
+  },
+  {
+    "bin": "Game",
+    "va": "0x59e7c0",
+    "label": "Mastery_Sum_Levels"
+  },
+  {
+    "bin": "Client",
+    "va": "0x430a50",
+    "label": "list crash container (fault 0x430DDA \u002B0x38A)"
+  },
+  {
+    "bin": "Shard",
+    "va": "0x42a238",
+    "label": "Shard_CreateChar_SQL_Format (_AddNewChar)"
+  },
+  {
+    "bin": "Client",
+    "va": "0x85eb10",
+    "label": "Select_Create_Screen"
+  }
+]

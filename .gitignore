@@ -1,0 +1,13 @@
+# build outputs
+App/bin/
+App/obj/
+# local / generated — do not commit
+../FullReverse/
+../PK2Stage/
+../SwapBackup/
+../SwapBackupQ/
+comments.json
+pins.json
+patches_applied.log
+fullreverse.path
+*.bak_*
