@@ -1,0 +1,211 @@
+<Window x:Class="ArabianWorkbench.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Arabian Workbench" Height="760" Width="1240">
+  <DockPanel>
+    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="6" VerticalAlignment="Center">
+      <TextBlock Text="Search:" VerticalAlignment="Center" Margin="0,0,6,0"/>
+      <TextBox x:Name="SearchBox" Width="240" ToolTip="filter by name, VA, comment, or area. Enter = search"/>
+      <TextBlock Text="Bin:" VerticalAlignment="Center" Margin="10,0,4,0"/>
+      <ComboBox x:Name="BinCombo" Width="130"/>
+      <TextBlock Text="Area:" VerticalAlignment="Center" Margin="10,0,4,0"/>
+      <ComboBox x:Name="AreaCombo" Width="130"/>
+      <Button Content="Search" Click="OnSearch" Width="70" Margin="10,0,0,0"/>
+      <Button Content="Samples" Click="OnSamples" Width="70" Margin="6,0,0,0"/>
+      <CheckBox x:Name="HotFirstBox" Content="Hot first" Margin="12,0,0,0" VerticalAlignment="Center" ToolTip="sort by xref count (call_top200)" Checked="OnHotToggle" Unchecked="OnHotToggle"/>
+      <TextBlock x:Name="CountsBlock" VerticalAlignment="Center" Margin="16,0,0,0" Foreground="Gray"/>
+    </StackPanel>
+    <StatusBar DockPanel.Dock="Bottom">
+      <StatusBarItem><TextBlock x:Name="StatusBlock" Text="ready"/></StatusBarItem>
+    </StatusBar>
+    <Grid>
+      <Grid.ColumnDefinitions><ColumnDefinition Width="400"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+      <TreeView x:Name="FuncTree" Grid.Column="0" Margin="6,0,6,6"
+                VirtualizingStackPanel.IsVirtualizing="True"
+                VirtualizingStackPanel.VirtualizationMode="Recycling"
+                SelectedItemChanged="OnSelect"/>
+      <TabControl Grid.Column="1" Margin="0,0,6,6" x:Name="MainTabs">
+        <TabItem Header="Details">
+          <ScrollViewer><StackPanel Margin="8">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,6">
+              <TextBlock Text="Name:" VerticalAlignment="Center" Margin="0,0,6,0"/>
+              <TextBox x:Name="NameBox" Width="330"/>
+              <TextBlock Text="VA:" Margin="12,0,6,0" VerticalAlignment="Center"/>
+              <TextBox x:Name="VaBox" Width="110" IsReadOnly="True" FontFamily="Consolas"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,6">
+              <TextBlock x:Name="MetaBlock" Foreground="Gray" TextWrapping="Wrap"/>
+            </StackPanel>
+            <GroupBox Header="Example (index preview)">
+              <ScrollViewer MaxHeight="120"><TextBlock x:Name="ExampleBlock" FontFamily="Consolas" TextWrapping="Wrap"/></ScrollViewer>
+            </GroupBox>
+            <GroupBox Header="Comment (Save persists to comments.json)" Margin="0,6,0,0">
+              <StackPanel>
+                <TextBox x:Name="CommentBox" Height="70" AcceptsReturn="True" TextWrapping="Wrap"/>
+                <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+                  <Button Content="Save comment" Click="OnSaveComment" Width="110"/>
+                  <Button Content="Copy VA" Click="OnCopyVa" Width="80" Margin="6,0,0,0"/>
+                  <Button Content="Copy name" Click="OnCopyName" Width="90" Margin="6,0,0,0"/>
+                </StackPanel>
+              </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Binary info (FullReverse report)" Margin="0,6,0,0">
+              <TextBlock x:Name="BinInfoBlock" FontFamily="Consolas" TextWrapping="Wrap" Foreground="Gray"/>
+            </GroupBox>
+          </StackPanel></ScrollViewer>
+        </TabItem>
+        <TabItem Header="Disassembly + xrefs">
+          <Grid Margin="8">
+            <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,4">
+              <Button Content="◀ Back" Click="OnNavBack" Width="70"/>
+              <Button Content="Fwd ▶" Click="OnNavFwd" Width="70" Margin="6,0,0,0"/>
+              <TextBlock Text="Jump VA:" VerticalAlignment="Center" Margin="12,0,4,0"/>
+              <TextBox x:Name="JumpBox" Width="100" FontFamily="Consolas" ToolTip="0x... in current bin, Enter = jump"/>
+              <Button Content="Go" Click="OnJump" Width="40" Margin="4,0,0,0"/>
+              <TextBlock Text="In-func:" VerticalAlignment="Center" Margin="12,0,4,0"/>
+              <TextBox x:Name="AsmFilterBox" Width="170" ToolTip="e.g. call, cmp al,2, push 0xB88438"/>
+              <Button Content="Filter" Click="OnAsmFilter" Width="55" Margin="4,0,0,0"/>
+              <Button Content="Clear" Click="OnAsmClear" Width="50" Margin="4,0,0,0"/>
+              <Button Content="Copy all" Click="OnCopyAsm" Width="65" Margin="4,0,0,0"/>
+              <Button Content="→ Patch" Click="OnSendPatch" Width="65" Margin="4,0,0,0" ToolTip="send current line addr+bytes to Patch composer"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Margin="0,0,0,4">
+              <TextBlock x:Name="AsmSrcBlock" Foreground="Gray" FontFamily="Consolas" TextWrapping="Wrap"/>
+              <TextBlock x:Name="AsmInfoBlock" Foreground="Gray" TextWrapping="Wrap"/>
+              <TextBlock x:Name="LiveBlock" FontFamily="Consolas" TextWrapping="Wrap" Foreground="DarkGreen"/>
+            </StackPanel>
+            <Grid Grid.Row="2">
+              <Grid.ColumnDefinitions><ColumnDefinition Width="2*"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+              <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Background="#111" Margin="0,0,6,0">
+                <TextBox x:Name="AsmBox" FontFamily="Consolas" FontSize="12" Foreground="#E8E8E8" Background="#111"
+                         IsReadOnly="True" AcceptsReturn="True" TextWrapping="NoWrap" BorderThickness="0"/>
+              </ScrollViewer>
+              <TabControl Grid.Column="1">
+                <TabItem Header="Callers">
+                  <DockPanel>
+                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="4">
+                      <Button Content="Expand 2 levels" Click="OnExpand2" Width="110" ToolTip="callers, then callers-of-callers"/>
+                      <Button Content="Collapse" Click="OnCollapseCallers" Width="70" Margin="4,0,0,0"/>
+                    </StackPanel>
+                    <TextBlock x:Name="CallerHdr" DockPanel.Dock="Top" Foreground="Gray" Margin="4"/>
+                    <ListBox x:Name="CallerList" FontFamily="Consolas" MouseDoubleClick="OnCallerJump"/>
+                  </DockPanel>
+                </TabItem>
+                <TabItem Header="Callees">
+                  <DockPanel>
+                    <TextBlock x:Name="CalleeHdr" DockPanel.Dock="Top" Foreground="Gray" Margin="4"/>
+                    <ListBox x:Name="CalleeList" FontFamily="Consolas" MouseDoubleClick="OnCalleeJump"/>
+                  </DockPanel>
+                </TabItem>
+                <TabItem Header="Strings/refs">
+                  <DockPanel>
+                    <TextBlock x:Name="RefHdr" DockPanel.Dock="Top" Foreground="Gray" Margin="4"/>
+                    <ListBox x:Name="RefList" FontFamily="Consolas"/>
+                  </DockPanel>
+                </TabItem>
+              </TabControl>
+            </Grid>
+            <GroupBox Grid.Row="3" Header="Deep search — full bodies (not just names)" Margin="0,4,0,0">
+              <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                  <TextBox x:Name="DeepBox" Width="260" ToolTip="e.g. cmp al,2 · push 0xB88438 · _AddNewChar · Teleport"/>
+                  <ComboBox x:Name="DeepScope" Width="130" Margin="6,0,0,0"/>
+                  <Button Content="Search bodies" Click="OnDeepSearch" Width="110" Margin="6,0,0,0"/>
+                  <TextBlock x:Name="DeepStatus" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Gray"/>
+                </StackPanel>
+                <ListBox x:Name="DeepList" Height="60" FontFamily="Consolas" Margin="0,4,0,0" MouseDoubleClick="OnDeepJump"/>
+                <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+                  <TextBox x:Name="StrBox" Width="260" ToolTip="e.g. Siege, Teleport, _AddNewChar, Mastery"/>
+                  <Button Content="String → functions" Click="OnStrSearch" Width="130" Margin="6,0,0,0" ToolTip="inverse xref: strings containing text, then functions referencing them"/>
+                  <TextBlock x:Name="StrStatus" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Gray"/>
+                </StackPanel>
+                <ListBox x:Name="StrList" Height="60" FontFamily="Consolas" Margin="0,4,0,0" MouseDoubleClick="OnStrFuncJump" ToolTip="matched functions — double-click to jump"/>
+              </StackPanel>
+            </GroupBox>
+            <TextBlock Grid.Row="4" Text="Double-click any caller/callee/hit to jump. Callers from FullReverse/*/callers_index.json · strings resolved live from target exe." Foreground="Gray" Margin="0,4,0,0" TextWrapping="Wrap"/>
+          </Grid>
+        </TabItem>
+        <TabItem Header="RTTI classes">
+          <DockPanel Margin="8">
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,6">
+              <TextBlock Text="Class:" VerticalAlignment="Center"/>
+              <TextBox x:Name="RttiBox" Width="220" Margin="6,0,0,0" ToolTip="e.g. Nest, Hive, Tactic, RefObj, CIF, Skeleton"/>
+              <ComboBox x:Name="RttiScope" Width="130" Margin="6,0,0,0"/>
+              <Button Content="List" Click="OnRttiList" Width="60" Margin="6,0,0,0"/>
+              <Button Content="Refs" Click="OnRttiRefs" Width="60" Margin="6,0,0,0" ToolTip="functions referencing selected class RTTI"/>
+              <TextBlock x:Name="RttiStatus" VerticalAlignment="Center" Margin="12,0,0,0" Foreground="Gray"/>
+            </StackPanel>
+            <Grid>
+              <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+              <DockPanel Grid.Column="0" Margin="0,0,6,0">
+                <TextBlock x:Name="RttiHdr" DockPanel.Dock="Top" Foreground="Gray" Margin="0,0,0,4"/>
+                <ListBox x:Name="RttiList" FontFamily="Consolas" MouseDoubleClick="OnRttiRefsGo"/>
+              </DockPanel>
+              <DockPanel Grid.Column="1">
+                <TextBlock x:Name="RttiRefHdr" DockPanel.Dock="Top" Foreground="Gray" Margin="0,0,0,4"/>
+                <ListBox x:Name="RttiRefList" FontFamily="Consolas" MouseDoubleClick="OnRttiJump"/>
+              </DockPanel>
+            </Grid>
+          </DockPanel>
+        </TabItem>
+        <TabItem Header="Patch v2" x:Name="PatchTab">
+          <ScrollViewer><StackPanel Margin="8">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
+              <TextBlock Text="Target exe:" VerticalAlignment="Center"/>
+              <TextBox x:Name="ExeBox" Width="420" Margin="6,0,6,0"/>
+              <Button Content="Browse" Click="OnBrowse" Width="70"/>
+              <Button Content="Use bin default" Click="OnUseDefault" Width="110" Margin="6,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
+              <TextBlock Text="Orig hex:" VerticalAlignment="Center"/>
+              <TextBox x:Name="OrigBox" Width="200" Margin="6,0,6,0" FontFamily="Consolas"/>
+              <TextBlock Text="New hex:" VerticalAlignment="Center"/>
+              <TextBox x:Name="NewBox" Width="200" Margin="6,0,6,0" FontFamily="Consolas"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
+              <Button Content="Verify (no write)" Click="OnVerify" Width="130"/>
+              <Button Content="Stage" Click="OnStage" Width="60" Margin="6,0,0,0"/>
+              <Button Content="Apply staged" Click="OnApply" Width="90" Margin="6,0,0,0"/>
+              <Button Content="Rollback latest" Click="OnRollback" Width="110" Margin="6,0,0,0"/>
+            </StackPanel>
+            <TextBlock x:Name="PatchInfoBlock" FontFamily="Consolas" TextWrapping="Wrap" Margin="0,0,0,6"/>
+            <GroupBox Header="Backups beside target">
+              <StackPanel>
+                <ListBox x:Name="BackupList" Height="70" FontFamily="Consolas"/>
+                <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+                  <Button Content="Refresh" Click="OnBackupRefresh" Width="70"/>
+                  <Button Content="Rollback to selected" Click="OnRollbackTo" Width="150" Margin="6,0,0,0"/>
+                </StackPanel>
+              </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Batch — patches.json (hash-guarded seeds)" Margin="0,6,0,0">
+              <StackPanel>
+                <ListBox x:Name="SeedList" Height="110" FontFamily="Consolas"/>
+                <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+                  <Button Content="Verify all vs target" Click="OnSeedVerifyAll" Width="140"/>
+                  <Button Content="Apply selected seed" Click="OnSeedApply" Width="140" Margin="6,0,0,0"/>
+                </StackPanel>
+                <TextBlock x:Name="SeedInfoBlock" TextWrapping="Wrap" Margin="0,4,0,0"/>
+              </StackPanel>
+            </GroupBox>
+            <GroupBox Header="History (Workbench/patches_applied.log)" Margin="0,6,0,0">
+              <ScrollViewer MaxHeight="120"><TextBlock x:Name="HistBlock" FontFamily="Consolas" TextWrapping="Wrap"/></ScrollViewer>
+            </GroupBox>
+          </StackPanel></ScrollViewer>
+        </TabItem>
+        <TabItem Header="Pins">
+          <DockPanel Margin="8">
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,6">
+              <Button Content="Pin current" Click="OnPinCurrent" Width="90" ToolTip="pin open function to workspace"/>
+              <Button Content="Remove selected" Click="OnPinRemove" Width="120" Margin="6,0,0,0"/>
+              <Button Content="Arabian preset" Click="OnPinsPreset" Width="110" Margin="6,0,0,0" ToolTip="seed vector sites + seeds + crash sites"/>
+              <TextBlock x:Name="PinsStatus" VerticalAlignment="Center" Margin="12,0,0,0" Foreground="Gray"/>
+            </StackPanel>
+            <ListBox x:Name="PinsList" FontFamily="Consolas" MouseDoubleClick="OnPinJump" ToolTip="double-click to jump"/>
+          </DockPanel>
+        </TabItem>
+      </TabControl>
+    </Grid>
+  </DockPanel>
+</Window>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>disable</Nullable>
+    <AssemblyName>ArabianWorkbench</AssemblyName>
+    <Product>Arabian Workbench</Product>
+    <ApplicationIcon>ArabianWorkbench.ico</ApplicationIcon>
+    <Win32Icon>ArabianWorkbench.ico</Win32Icon>
+  </PropertyGroup>
+</Project>
