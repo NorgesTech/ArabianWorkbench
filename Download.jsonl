@@ -1,0 +1,690 @@
+{"va": "0x401000", "name": "Download_Files [0x401000]", "example": "ret; int3; int3; int3; int3; int3", "comment": "string \"download_files\"", "area": "General"}
+{"va": "0x4014b0", "name": "Calls_4599E0 [0x4014b0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push esi", "comment": "calls 0x4599e0", "area": "General"}
+{"va": "0x4015d0", "name": "Globalmanager [0x4015d0]", "example": "push ebp; mov ebp,; and esp,; push ecx; push esi; push 0x4b6d88", "comment": "string \"GlobalManager\"", "area": "General"}
+{"va": "0x401640", "name": "Retrieve_Module_Version [0x401640]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b1b06; mov eax,", "comment": "string \"cannot retrieve module version data from divisionmanager\"", "area": "General"}
+{"va": "0x401820", "name": "Start_Patch_Relay [0x401820]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b1abc; mov eax,", "comment": "string \"start patch relay : %d\"", "area": "General"}
+{"va": "0x401be0", "name": "Calls_480E6B [0x401be0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6390; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x401cd0", "name": "Calls_480E6B [0x401cd0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6370; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x401da0", "name": "List_Too_Long [0x401da0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7ec0; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x401f70", "name": "List_Too_Long [0x401f70]", "example": "push ebp; mov ebp,; push -1; push 0x4a7ea0; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x4033a0", "name": "Leaf_Helper [0x4033a0]", "example": "push ebp; mov ebp,; push -1; push 0x4a8640; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x4039c0", "name": "User_Limit [0x4039c0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4adf18; mov eax,", "comment": "string \"USER_LIMIT\"", "area": "General"}
+{"va": "0x4044a0", "name": "Unhandled_Msg_Received [0x4044a0]", "example": "push ebp; mov ebp,; push -2; push 0x4cb7b8; push 0x484420; mov eax,", "comment": "string \"unhandled msg received %s : %s\"", "area": "General"}
+{"va": "0x404830", "name": "Calls_4057C0 [0x404830]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; call dword", "comment": "calls 0x4057c0", "area": "General"}
+{"va": "0x404950", "name": "Leaf_Helper [0x404950]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push ebp", "comment": "no calls in head", "area": "General"}
+{"va": "0x404a10", "name": "Calls_402490 [0x404a10]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; mov ebx,", "comment": "calls 0x402490", "area": "General"}
+{"va": "0x404cc0", "name": "Overlapjob_Local_Ack [0x404cc0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; mov ebx,", "comment": "string \"overlapjob local ack : pOverlapJob is NULL\"", "area": "Guild"}
+{"va": "0x4055c0", "name": "Calls_4599E0 [0x4055c0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push esi", "comment": "calls 0x4599e0", "area": "General"}
+{"va": "0x405670", "name": "Map_Set_Iterator [0x405670]", "example": "push ebp; mov ebp,; and esp,; push ecx; push ebx; push esi", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x406140", "name": "List_Subscript [0x406140]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "string \"invalid list<T> subscript\"", "area": "General"}
+{"va": "0x4063a0", "name": "List_Argument [0x4063a0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aa718; mov eax,", "comment": "string \"invalid list<T> argument\"", "area": "General"}
+{"va": "0x406560", "name": "Map_Set_Iterator [0x406560]", "example": "push ebp; mov ebp,; push -1; push 0x4a7e55; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x4067e0", "name": "Calls_480E6B [0x4067e0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7e30; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x407760", "name": "Disconnected_Unknown_Module [0x407760]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b1990; mov eax,", "comment": "string \"disconnected unknown module : %s\"", "area": "Network"}
+{"va": "0x407c60", "name": "Session_Lost_Netengine [0x407c60]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push esi", "comment": "string \"Session Lost [%d]: NETENGINE_ERROR-%s\"", "area": "Network"}
+{"va": "0x4080a0", "name": "Calls_40FD30 [0x4080a0]", "example": "push ebp; mov ebp,; and esp,; push ebx; push esi; push 1", "comment": "calls 0x40fd30", "area": "General"}
+{"va": "0x4080e0", "name": "Successfully_Server_Certificated [0x4080e0]", "example": "push ebp; mov ebp,; and esp,; push ecx; push ebx; mov ebx,", "comment": "string \"successfully server certificated\"", "area": "General"}
+{"va": "0x4083d0", "name": "Calls_416970 [0x4083d0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; cmp dword; push ebx", "comment": "calls 0x416970", "area": "General"}
+{"va": "0x408510", "name": "Calls_40FD30 [0x408510]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push esi", "comment": "calls 0x40fd30", "area": "General"}
+{"va": "0x408940", "name": "Calls_406A30 [0x408940]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push esi", "comment": "calls 0x406a30", "area": "General"}
+{"va": "0x408ab0", "name": "Shard_Name_Changed [0x408ab0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b1958; mov eax,", "comment": "string \"shard [%d] name changed : %s -> %s\"", "area": "General"}
+{"va": "0x40a090", "name": "Map_Set_Argument [0x40a090]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x40a200", "name": "Leaf_Helper [0x40a200]", "example": "push ebp; mov ebp,; and esp,; mov edx,; push esi; mov esi,", "comment": "no calls in head", "area": "General"}
+{"va": "0x40a370", "name": "Calls_480E6B [0x40a370]", "example": "push ebp; mov ebp,; push -1; push 0x4a7d10; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x40a900", "name": "Map_Set_Iterator [0x40a900]", "example": "push ebp; mov ebp,; push -1; push 0x4a7cf5; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x40add0", "name": "List_Subscript [0x40add0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7cd0; mov eax,; push eax", "comment": "string \"invalid list<T> subscript\"", "area": "General"}
+{"va": "0x40b4d0", "name": "Calls_480E6B [0x40b4d0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7c80; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x40bb40", "name": "Deque_Too_Long [0x40bb40]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4adcc8; mov eax,", "comment": "string \"deque<T> too long\"", "area": "General"}
+{"va": "0x40be00", "name": "List_Too_Long [0x40be00]", "example": "push ebp; mov ebp,; push -1; push 0x4a85f0; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x40ca60", "name": "Leaf_Helper [0x40ca60]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; mov ebx,", "comment": "no calls in head", "area": "General"}
+{"va": "0x40d660", "name": "Startuperror_Txt [0x40d660]", "example": "push ebp; mov ebp,; and esp,; push 0x2010001; call 0x413560; push 0x3010002", "comment": "string \"%s\\StartupError_%s.txt\"", "area": "General"}
+{"va": "0x40e080", "name": "Server_Cfg [0x40e080]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4af9e3; mov eax,", "comment": "string \"%s\\Server.cfg\"", "area": "General"}
+{"va": "0x40f020", "name": "Calls_40F0C0 [0x40f020]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "calls 0x40f0c0", "area": "General"}
+{"va": "0x40f270", "name": "Map_Set_Iterator [0x40f270]", "example": "push ebp; mov ebp,; push -1; push 0x4a91a5; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x40f660", "name": "Calls_480E6B [0x40f660]", "example": "push ebp; mov ebp,; push -1; push 0x4a7c60; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x40ff80", "name": "Leaf_Helper [0x40ff80]", "example": "push ebp; mov ebp,; and esp,; mov eax,; sub esp,; test eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x410120", "name": "Leaf_Helper [0x410120]", "example": "push ebp; mov ebp,; and esp,; push ecx; push ebx; push esi", "comment": "no calls in head", "area": "General"}
+{"va": "0x410260", "name": "Leaf_Helper [0x410260]", "example": "push ebp; mov ebp,; and esp,; push ecx; push ebx; push esi", "comment": "no calls in head", "area": "General"}
+{"va": "0x410380", "name": "Leaf_Helper [0x410380]", "example": "push ebp; mov ebp,; and esp,; push ecx; mov ecx,; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x410630", "name": "Leaf_Helper [0x410630]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "no calls in head", "area": "General"}
+{"va": "0x411100", "name": "Leaf_Helper [0x411100]", "example": "push ebp; mov ebp,; push -1; push 0x4ada50; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x411330", "name": "Vector_Too_Long [0x411330]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ada28; mov eax,", "comment": "string \"vector<T> too long\"", "area": "General"}
+{"va": "0x411430", "name": "Vector_Subscript [0x411430]", "example": "push ebp; mov ebp,; and esp,; mov edx,; push esi; mov esi,", "comment": "string \"invalid vector<T> subscript\"", "area": "General"}
+{"va": "0x411770", "name": "Cchunkallocatorst_Allocitemblock [0x411770]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4af90b; mov eax,", "comment": "string \"CChunkAllocatorST::AllocItemBlock() Failed\"", "area": "Security"}
+{"va": "0x411b00", "name": "Calls_480E6B [0x411b00]", "example": "push ebp; mov ebp,; push -1; push 0x4a7c10; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x411fb0", "name": "Calls_412380 [0x411fb0]", "example": "push ebp; mov ebp,; and esp,; push esi; mov esi,; mov ecx,", "comment": "calls 0x412380", "area": "General"}
+{"va": "0x412120", "name": "Deque_Too_Long [0x412120]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ad9c8; mov eax,", "comment": "string \"deque<T> too long\"", "area": "General"}
+{"va": "0x412380", "name": "List_Too_Long [0x412380]", "example": "push ebp; mov ebp,; push -1; push 0x4a8560; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x412510", "name": "Leaf_Helper [0x412510]", "example": "push ebp; mov ebp,; and esp,; push ecx; mov eax,; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x4125a0", "name": "Deque_Argument [0x4125a0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aa508; mov eax,", "comment": "string \"invalid deque <T> argument\"", "area": "General"}
+{"va": "0x4131b0", "name": "Leaf_Helper [0x4131b0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4af8d8; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x413560", "name": "Msgcount [0x413560]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4af848; mov eax,", "comment": "string \"MsgCount\"", "area": "General"}
+{"va": "0x413720", "name": "Map_Set_Iterator [0x413720]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push esi", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x414280", "name": "Map_Set_Argument [0x414280]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov edx,; sub esp,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x414550", "name": "Map_Set_Iterator [0x414550]", "example": "push ebp; mov ebp,; push -1; push 0x4a7bf5; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x414720", "name": "Calls_480E6B [0x414720]", "example": "push ebp; mov ebp,; push -1; push 0x4a7bd0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x414d20", "name": "Leaf_Helper [0x414d20]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push ebp", "comment": "no calls in head", "area": "General"}
+{"va": "0x415a20", "name": "Leaf_Helper [0x415a20]", "example": "push ebp; mov ebp,; and esp,; mov eax,; push esi; mov esi,", "comment": "no calls in head", "area": "General"}
+{"va": "0x416e20", "name": "Calls_4167A0 [0x416e20]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push esi", "comment": "calls 0x4167a0", "area": "General"}
+{"va": "0x419890", "name": "Calls_4238B0 [0x419890]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; lea eax,", "comment": "calls 0x4238b0", "area": "General"}
+{"va": "0x41e430", "name": "Map_Set_Argument [0x41e430]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov edx,; sub esp,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x41e8c0", "name": "Map_Set_Argument [0x41e8c0]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov edx,; sub esp,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x41ed30", "name": "Map_Set_Argument [0x41ed30]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov edx,; sub esp,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x41f220", "name": "Map_Set_Argument [0x41f220]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x41f690", "name": "Map_Set_Argument [0x41f690]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov edx,; sub esp,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x41fb30", "name": "Map_Set_Argument [0x41fb30]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov edx,; sub esp,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x420120", "name": "List_Argument [0x420120]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aa388; mov eax,", "comment": "string \"invalid list<T> argument\"", "area": "General"}
+{"va": "0x420740", "name": "Map_Set_Argument [0x420740]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov edx,; sub esp,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x420c90", "name": "Calls_426180 [0x420c90]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov edx,; sub esp,", "comment": "calls 0x426180", "area": "General"}
+{"va": "0x420d60", "name": "Calls_480E6B [0x420d60]", "example": "push ebp; mov ebp,; push -1; push 0x4a7a90; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x420f50", "name": "Calls_480E6B [0x420f50]", "example": "push ebp; mov ebp,; push -1; push 0x4a7a70; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x421140", "name": "Calls_480E6B [0x421140]", "example": "push ebp; mov ebp,; push -1; push 0x4a7a50; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x421330", "name": "Calls_480E6B [0x421330]", "example": "push ebp; mov ebp,; push -1; push 0x4a7a30; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x421520", "name": "Calls_480E6B [0x421520]", "example": "push ebp; mov ebp,; push -1; push 0x4a7a10; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x421710", "name": "Calls_480E6B [0x421710]", "example": "push ebp; mov ebp,; push -1; push 0x4a79f0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x4218f0", "name": "Calls_480E6B [0x4218f0]", "example": "push ebp; mov ebp,; push -1; push 0x4a79d0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x421ad0", "name": "Calls_480E6B [0x421ad0]", "example": "push ebp; mov ebp,; push -1; push 0x4a79b0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x422260", "name": "Calls_427C90 [0x422260]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "calls 0x427c90", "area": "General"}
+{"va": "0x422a70", "name": "Map_Set_Argument [0x422a70]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x422e50", "name": "Map_Set_Argument [0x422e50]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x423260", "name": "Map_Set_Argument [0x423260]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x423710", "name": "Map_Set_Argument [0x423710]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov edx,; sub esp,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x423b20", "name": "List_Argument [0x423b20]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aa268; mov eax,", "comment": "string \"invalid list<T> argument\"", "area": "General"}
+{"va": "0x424430", "name": "Map_Set_Iterator [0x424430]", "example": "push ebp; mov ebp,; push -1; push 0x4a7995; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x424790", "name": "Map_Set_Iterator [0x424790]", "example": "push ebp; mov ebp,; push -1; push 0x4a7975; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x424ae0", "name": "Map_Set_Iterator [0x424ae0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7955; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x424d80", "name": "Map_Set_Iterator [0x424d80]", "example": "push ebp; mov ebp,; push -1; push 0x4a7935; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x4250b0", "name": "Map_Set_Iterator [0x4250b0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7915; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x425470", "name": "Map_Set_Iterator [0x425470]", "example": "push ebp; mov ebp,; push -1; push 0x4a9035; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x4256e0", "name": "List_Argument [0x4256e0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aa238; mov eax,", "comment": "string \"invalid list<T> argument\"", "area": "General"}
+{"va": "0x425c60", "name": "Vector_Subscript [0x425c60]", "example": "push ebp; mov ebp,; push -1; push 0x4ad490; mov eax,; push eax", "comment": "string \"invalid vector<T> subscript\"", "area": "General"}
+{"va": "0x426030", "name": "Map_Set_Iterator [0x426030]", "example": "push ebp; mov ebp,; push -1; push 0x4a78f5; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x426290", "name": "Map_Set_Iterator [0x426290]", "example": "push ebp; mov ebp,; push -1; push 0x4a78d5; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x426440", "name": "List_Too_Long [0x426440]", "example": "push ebp; mov ebp,; push -1; push 0x4a78b0; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x426700", "name": "List_Too_Long [0x426700]", "example": "push ebp; mov ebp,; push -1; push 0x4a7890; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x4269c0", "name": "List_Too_Long [0x4269c0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7870; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x426c80", "name": "List_Too_Long [0x426c80]", "example": "push ebp; mov ebp,; push -1; push 0x4a7850; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x426f40", "name": "List_Too_Long [0x426f40]", "example": "push ebp; mov ebp,; push -1; push 0x4a7830; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x427200", "name": "List_Too_Long [0x427200]", "example": "push ebp; mov ebp,; push -1; push 0x4a7810; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x4274b0", "name": "List_Too_Long [0x4274b0]", "example": "push ebp; mov ebp,; push -1; push 0x4a77f0; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x427690", "name": "List_Too_Long [0x427690]", "example": "push ebp; mov ebp,; push -1; push 0x4a8540; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x427800", "name": "List_Too_Long [0x427800]", "example": "push ebp; mov ebp,; push -1; push 0x4a77d0; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x427e60", "name": "Map_Set_Iterator [0x427e60]", "example": "push ebp; mov ebp,; push -1; push 0x4a77b5; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x4284e0", "name": "Calls_480E6B [0x4284e0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7795; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x4287f0", "name": "Map_Set_Iterator [0x4287f0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7775; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x428bf0", "name": "Calls_480E6B [0x428bf0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7755; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x428ee0", "name": "Map_Set_Iterator [0x428ee0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7735; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x429480", "name": "Vector_Subscript [0x429480]", "example": "push ebp; mov ebp,; push -1; push 0x4acfc0; mov eax,; push eax", "comment": "string \"invalid vector<T> subscript\"", "area": "General"}
+{"va": "0x429e70", "name": "Map_Set_Iterator [0x429e70]", "example": "push ebp; mov ebp,; push -1; push 0x4a7710; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x42a220", "name": "Map_Set_Iterator [0x42a220]", "example": "push ebp; mov ebp,; push -1; push 0x4a76f0; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x42a5c0", "name": "Calls_480E6B [0x42a5c0]", "example": "push ebp; mov ebp,; push -1; push 0x4a76d0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x42a6a0", "name": "Map_Set_Iterator [0x42a6a0]", "example": "push ebp; mov ebp,; push -1; push 0x4a76b0; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x42aa40", "name": "Map_Set_Iterator [0x42aa40]", "example": "push ebp; mov ebp,; push -1; push 0x4a7690; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x42adf0", "name": "Calls_480E6B [0x42adf0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7670; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x42aee0", "name": "Calls_480E6B [0x42aee0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7650; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x42af90", "name": "Leaf_Helper [0x42af90]", "example": "push ebp; mov ebp,; push -1; push 0x4acf10; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x42b1d0", "name": "Calls_480E6B [0x42b1d0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7630; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x42b260", "name": "Calls_480E6B [0x42b260]", "example": "push ebp; mov ebp,; push -1; push 0x4a7610; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x42b330", "name": "Leaf_Helper [0x42b330]", "example": "push ebp; mov ebp,; push -1; push 0x4af290; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x42b440", "name": "Vector_Too_Long [0x42b440]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4acee8; mov eax,", "comment": "string \"vector<T> too long\"", "area": "General"}
+{"va": "0x42b540", "name": "Calls_480E6B [0x42b540]", "example": "push ebp; mov ebp,; push -1; push 0x4a75f0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x42b610", "name": "Calls_480E6B [0x42b610]", "example": "push ebp; mov ebp,; push -1; push 0x4a75d0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x42bbd0", "name": "Calls_480E6B [0x42bbd0]", "example": "push ebp; mov ebp,; push -1; push 0x4a75b0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x42c550", "name": "Map_Set_Iterator [0x42c550]", "example": "push ebp; mov ebp,; push -1; push 0x4a7590; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x42c9d0", "name": "Map_Set_Iterator [0x42c9d0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7570; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x42ce10", "name": "Map_Set_Iterator [0x42ce10]", "example": "push ebp; mov ebp,; push -1; push 0x4a7550; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x42d250", "name": "Calls_480E6B [0x42d250]", "example": "push ebp; mov ebp,; push -1; push 0x4a7530; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x42d3c0", "name": "Calls_480E6B [0x42d3c0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7510; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x42d450", "name": "Calls_480E6B [0x42d450]", "example": "push ebp; mov ebp,; push -1; push 0x4a74f0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x42d520", "name": "Leaf_Helper [0x42d520]", "example": "push ebp; mov ebp,; push -1; push 0x4af1e0; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x42d630", "name": "Vector_Too_Long [0x42d630]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aceb8; mov eax,", "comment": "string \"vector<T> too long\"", "area": "General"}
+{"va": "0x42df00", "name": "Leaf_Helper [0x42df00]", "example": "push ebp; mov ebp,; push -1; push 0x4ace90; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x42e9b0", "name": "Vector_Too_Long [0x42e9b0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ace08; mov eax,", "comment": "string \"vector<T> too long\"", "area": "General"}
+{"va": "0x4306c0", "name": "Leaf_Helper [0x4306c0]", "example": "push ebp; mov ebp,; push -1; push 0x4b1850; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x4307c0", "name": "Leaf_Helper [0x4307c0]", "example": "push ebp; mov ebp,; push -1; push 0x4b1830; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x430b30", "name": "Leaf_Helper [0x430b30]", "example": "push ebp; mov ebp,; push -1; push 0x4a74d0; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x430bc0", "name": "Leaf_Helper [0x430bc0]", "example": "push ebp; mov ebp,; push -1; push 0x4a74b0; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x430ce0", "name": "Leaf_Helper [0x430ce0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7490; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x4310f0", "name": "Leaf_Helper [0x4310f0]", "example": "push ebp; mov ebp,; push -1; push 0x4a8520; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x431170", "name": "Leaf_Helper [0x431170]", "example": "push ebp; mov ebp,; push -1; push 0x4a8500; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x4311f0", "name": "Leaf_Helper [0x4311f0]", "example": "push ebp; mov ebp,; push -1; push 0x4a84e0; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x432200", "name": "Calls_4325F0 [0x432200]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push edi; mov edi,", "comment": "calls 0x4325f0", "area": "General"}
+{"va": "0x432260", "name": "Calls_480E6B [0x432260]", "example": "push ebp; mov ebp,; push -1; push 0x4a7470; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x432380", "name": "Leaf_Helper [0x432380]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b0e78; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4324e0", "name": "Calls_4599E0 [0x4324e0]", "example": "push ebp; mov ebp,; and esp,; cmp dword; jne 0x4324f1; call 0x4599e0", "comment": "calls 0x4599e0", "area": "General"}
+{"va": "0x4325d0", "name": "Leaf_Helper [0x4325d0]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov eax,; cmp eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x432650", "name": "List_Too_Long [0x432650]", "example": "push ebp; mov ebp,; push -1; push 0x4a7450; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x432b30", "name": "Leaf_Helper [0x432b30]", "example": "push ebp; mov ebp,; push -1; push 0x4b0e50; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x4331c0", "name": "Leaf_Helper [0x4331c0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b0db8; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x433510", "name": "Leaf_Helper [0x433510]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b0d58; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x434250", "name": "Calls_4346F0 [0x434250]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "calls 0x4346f0", "area": "General"}
+{"va": "0x434390", "name": "Leaf_Helper [0x434390]", "example": "push ebp; mov ebp,; and esp,; mov edx,; push esi; mov esi,", "comment": "no calls in head", "area": "General"}
+{"va": "0x434560", "name": "Calls_480E6B [0x434560]", "example": "push ebp; mov ebp,; push -1; push 0x4a7330; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x434810", "name": "Cchunkallocatorst_Allocitemblock [0x434810]", "example": "push ebp; mov ebp,; push -1; push 0x4a7315; mov eax,; push eax", "comment": "string \"CChunkAllocatorST::AllocItemBlock() Failed\"", "area": "Security"}
+{"va": "0x434c70", "name": "Calls_480E6B [0x434c70]", "example": "push ebp; mov ebp,; push -1; push 0x4a72f0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x434dd0", "name": "List_Too_Long [0x434dd0]", "example": "push ebp; mov ebp,; push -1; push 0x4a72d0; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x435210", "name": "Calls_480E6B [0x435210]", "example": "push ebp; mov ebp,; push -1; push 0x4a7250; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x435860", "name": "Deque_Too_Long [0x435860]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4acc48; mov eax,", "comment": "string \"deque<T> too long\"", "area": "General"}
+{"va": "0x435b30", "name": "List_Too_Long [0x435b30]", "example": "push ebp; mov ebp,; push -1; push 0x4a8430; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x436520", "name": "Deque_Too_Long [0x436520]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4acb88; mov eax,", "comment": "string \"deque<T> too long\"", "area": "General"}
+{"va": "0x436880", "name": "Leaf_Helper [0x436880]", "example": "push ebp; mov ebp,; and esp,; push ecx; mov eax,; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x4368d0", "name": "Deque_Argument [0x4368d0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4a9ed8; mov eax,", "comment": "string \"invalid deque <T> argument\"", "area": "General"}
+{"va": "0x436cf0", "name": "Leaf_Helper [0x436cf0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b0cc8; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x439840", "name": "List_Argument [0x439840]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4a9ea8; mov eax,", "comment": "string \"invalid list<T> argument\"", "area": "General"}
+{"va": "0x439d70", "name": "Map_Set_Argument [0x439d70]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov edx,; sub esp,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x43a1d0", "name": "Map_Set_Argument [0x43a1d0]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov edx,; sub esp,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x43a720", "name": "Calls_480E6B [0x43a720]", "example": "push ebp; mov ebp,; push -1; push 0x4a71a0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x43a910", "name": "Calls_480E6B [0x43a910]", "example": "push ebp; mov ebp,; push -1; push 0x4a7180; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x43ab00", "name": "Calls_480E6B [0x43ab00]", "example": "push ebp; mov ebp,; push -1; push 0x4a7160; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x43b520", "name": "Vector_Subscript [0x43b520]", "example": "push ebp; mov ebp,; push -1; push 0x4aca10; mov eax,; push eax", "comment": "string \"invalid vector<T> subscript\"", "area": "General"}
+{"va": "0x43b9b0", "name": "Map_Set_Iterator [0x43b9b0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7145; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x43bd00", "name": "Map_Set_Iterator [0x43bd00]", "example": "push ebp; mov ebp,; push -1; push 0x4a7125; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x43c040", "name": "Vector_Subscript [0x43c040]", "example": "push ebp; mov ebp,; push -1; push 0x4ac960; mov eax,; push eax", "comment": "string \"invalid vector<T> subscript\"", "area": "General"}
+{"va": "0x43c2f0", "name": "List_Too_Long [0x43c2f0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7100; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x43c5b0", "name": "List_Too_Long [0x43c5b0]", "example": "push ebp; mov ebp,; push -1; push 0x4a70e0; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x43c870", "name": "List_Too_Long [0x43c870]", "example": "push ebp; mov ebp,; push -1; push 0x4a70c0; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x43cd30", "name": "Calls_480E6B [0x43cd30]", "example": "push ebp; mov ebp,; push -1; push 0x4a70a0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x43cdc0", "name": "Calls_480E6B [0x43cdc0]", "example": "push ebp; mov ebp,; push -1; push 0x4a8340; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x43cf10", "name": "Calls_480E6B [0x43cf10]", "example": "push ebp; mov ebp,; push -1; push 0x4a7080; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x43cfa0", "name": "Calls_480E6B [0x43cfa0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7060; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x43d070", "name": "Leaf_Helper [0x43d070]", "example": "push ebp; mov ebp,; push -1; push 0x4aeff0; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x43d180", "name": "Vector_Too_Long [0x43d180]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ac7e8; mov eax,", "comment": "string \"vector<T> too long\"", "area": "General"}
+{"va": "0x43d540", "name": "Map_Set_Iterator [0x43d540]", "example": "push ebp; mov ebp,; push -1; push 0x4a7040; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x43d8e0", "name": "Calls_480E6B [0x43d8e0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7020; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x43d9e0", "name": "Vector_Too_Long [0x43d9e0]", "example": "push ebp; mov ebp,; push -1; push 0x4aef70; mov eax,; push eax", "comment": "string \"vector<T> too long\"", "area": "General"}
+{"va": "0x43edd0", "name": "Leaf_Helper [0x43edd0]", "example": "push ebp; mov ebp,; push -1; push 0x4b0b90; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x43eed0", "name": "Leaf_Helper [0x43eed0]", "example": "push ebp; mov ebp,; push -1; push 0x4b0b70; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x43f1d0", "name": "Leaf_Helper [0x43f1d0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7000; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x43f260", "name": "Leaf_Helper [0x43f260]", "example": "push ebp; mov ebp,; push -1; push 0x4a6fe0; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x43f540", "name": "Leaf_Helper [0x43f540]", "example": "push ebp; mov ebp,; push -1; push 0x4a8320; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x43f5c0", "name": "Leaf_Helper [0x43f5c0]", "example": "push ebp; mov ebp,; push -1; push 0x4a8300; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x43f830", "name": "Local_Overlap_Job [0x43f830]", "example": "push ebp; mov ebp,; push -2; push 0x4cb4e8; push 0x484420; mov eax,", "comment": "string \"local overlap job pointer is null !!!\"", "area": "Guild"}
+{"va": "0x43fab0", "name": "Leaf_Helper [0x43fab0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b0b4b; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4402c0", "name": "Install [0x4402c0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aef3b; mov eax,", "comment": "string \"-install\"", "area": "General"}
+{"va": "0x440ae0", "name": "Vector_Too_Long [0x440ae0]", "example": "push ebp; mov ebp,; push -1; push 0x4ac700; mov eax,; push eax", "comment": "string \"vector<T> too long\"", "area": "General"}
+{"va": "0x4413d0", "name": "Dbghelp_Dll [0x4413d0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; mov eax,; xor eax,", "comment": "string \"DBGHELP.DLL\"", "area": "General"}
+{"va": "0x4421c0", "name": "Serverarchitectureview [0x4421c0]", "example": "push ebp; mov ebp,; and esp,; push ecx; push ebx; push esi", "comment": "string \"ServerArchitectureView\"", "area": "General"}
+{"va": "0x4424e0", "name": "Calls_449300 [0x4424e0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; mov eax,; xor eax,", "comment": "calls 0x449300", "area": "General"}
+{"va": "0x442850", "name": "Leaf_Helper [0x442850]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aeed8; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x442a80", "name": "Calls_442C50 [0x442a80]", "example": "push ebp; mov ebp,; and esp,; sub esp,; mov eax,; push ebx", "comment": "calls 0x442c50", "area": "General"}
+{"va": "0x442cb0", "name": "Calls_4169D0 [0x442cb0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b0a60; mov eax,", "comment": "calls 0x4169d0", "area": "General"}
+{"va": "0x4430b0", "name": "Leaf_Helper [0x4430b0]", "example": "push ebp; mov ebp,; and esp,; mov eax,; sub esp,; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x4439e0", "name": "Calls_4431A0 [0x4439e0]", "example": "push ebp; mov ebp,; and esp,; mov eax,; push ebx; mov ebx,", "comment": "calls 0x4431a0", "area": "General"}
+{"va": "0x443ad0", "name": "Leaf_Helper [0x443ad0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; test byte; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x443c30", "name": "Show_Server_Module [0x443c30]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push ebp", "comment": "string \"Show Server Module Name\"", "area": "General"}
+{"va": "0x443ec0", "name": "Leaf_Helper [0x443ec0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; mov eax,; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x444690", "name": "Calls_444770 [0x444690]", "example": "push ebp; mov ebp,; push -1; push 0x4aee50; mov eax,; push eax", "comment": "calls 0x444770", "area": "General"}
+{"va": "0x444770", "name": "Map_Set_Too [0x444770]", "example": "push ebp; mov ebp,; push -1; push 0x4a6f60; mov eax,; push eax", "comment": "string \"map/set<T> too long\"", "area": "World"}
+{"va": "0x444bf0", "name": "Map_Set_Argument [0x444bf0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x444f90", "name": "Calls_445810 [0x444f90]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "calls 0x445810", "area": "General"}
+{"va": "0x445200", "name": "List_Too_Long [0x445200]", "example": "push ebp; mov ebp,; push -1; push 0x4a6f40; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x445680", "name": "Map_Set_Iterator [0x445680]", "example": "push ebp; mov ebp,; push -1; push 0x4b0985; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x4459a0", "name": "Map_Set_Iterator [0x4459a0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6f25; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x446040", "name": "Map_Set_Iterator [0x446040]", "example": "push ebp; mov ebp,; push -1; push 0x4a6f00; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x4463f0", "name": "Calls_480E6B [0x4463f0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6ee0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x446a20", "name": "Leaf_Helper [0x446a20]", "example": "push ebp; mov ebp,; push -1; push 0x4aee30; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x446fb0", "name": "Gothic [0x446fb0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b16dc; mov eax,", "comment": "string \"MS Gothic\"", "area": "General"}
+{"va": "0x447480", "name": "Calls_4599E0 [0x447480]", "example": "push ebp; mov ebp,; and esp,; sub esp,; cmp dword; push esi", "comment": "calls 0x4599e0", "area": "General"}
+{"va": "0x4476b0", "name": "Engine_Version [0x4476b0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push ebp", "comment": "string \"============== Engine Version ================\"", "area": "General"}
+{"va": "0x447870", "name": "Save_Clear [0x447870]", "example": "push ebp; mov ebp,; and esp,; sub esp,; cmp dword; push ebx", "comment": "string \"Save && Clear\"", "area": "General"}
+{"va": "0x448030", "name": "Calls_448740 [0x448030]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov eax,; cmp eax,", "comment": "calls 0x448740", "area": "General"}
+{"va": "0x448060", "name": "Close_Server [0x448060]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov eax,; cmp eax,", "comment": "string \"close server\"", "area": "General"}
+{"va": "0x448200", "name": "Leaf_Helper [0x448200]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov eax,; cmp eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x448220", "name": "Leaf_Helper [0x448220]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov eax,; cmp eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4483c0", "name": "Calls_480E6B [0x4483c0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6ec0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x4485f0", "name": "List_Too_Long [0x4485f0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6ea0; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x448ce0", "name": "Calls_448DB0 [0x448ce0]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov ecx,; sub esp,", "comment": "calls 0x448db0", "area": "General"}
+{"va": "0x449180", "name": "Calls_44A430 [0x449180]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "calls 0x44a430", "area": "General"}
+{"va": "0x4491e0", "name": "Calls_449530 [0x4491e0]", "example": "push ebp; mov ebp,; and esp,; push ecx; push ebx; push esi", "comment": "calls 0x449530", "area": "General"}
+{"va": "0x44ac20", "name": "Calls_480E6B [0x44ac20]", "example": "push ebp; mov ebp,; push -1; push 0x4a6db0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x44b0d0", "name": "List_Argument [0x44b0d0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4a9bc8; mov eax,", "comment": "string \"invalid list<T> argument\"", "area": "General"}
+{"va": "0x44b6b0", "name": "Map_Set_Argument [0x44b6b0]", "example": "push ebp; mov ebp,; and esp,; mov eax,; mov edx,; sub esp,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x44bab0", "name": "List_Argument [0x44bab0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4a9b68; mov eax,", "comment": "string \"invalid list<T> argument\"", "area": "General"}
+{"va": "0x44bf30", "name": "List_Too_Long [0x44bf30]", "example": "push ebp; mov ebp,; push -1; push 0x4a6d90; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x44c570", "name": "Vector_Subscript [0x44c570]", "example": "push ebp; mov ebp,; push -1; push 0x4ac410; mov eax,; push eax", "comment": "string \"invalid vector<T> subscript\"", "area": "General"}
+{"va": "0x44c940", "name": "Map_Set_Iterator [0x44c940]", "example": "push ebp; mov ebp,; push -1; push 0x4a6d75; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x44ce30", "name": "Vector_Subscript [0x44ce30]", "example": "push ebp; mov ebp,; push -1; push 0x4ac330; mov eax,; push eax", "comment": "string \"invalid vector<T> subscript\"", "area": "General"}
+{"va": "0x44d430", "name": "Calls_480E6B [0x44d430]", "example": "push ebp; mov ebp,; push -1; push 0x4a6d50; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x44d4c0", "name": "Calls_480E6B [0x44d4c0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6d30; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x44d5a0", "name": "Vector_Too_Long [0x44d5a0]", "example": "push ebp; mov ebp,; push -1; push 0x4aecd0; mov eax,; push eax", "comment": "string \"vector<T> too long\"", "area": "General"}
+{"va": "0x44d7c0", "name": "Calls_480E6B [0x44d7c0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6d10; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x44d970", "name": "Calls_480E6B [0x44d970]", "example": "push ebp; mov ebp,; push -1; push 0x4a6cf0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x44da00", "name": "Calls_480E6B [0x44da00]", "example": "push ebp; mov ebp,; push -1; push 0x4a6cd0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x44dae0", "name": "Leaf_Helper [0x44dae0]", "example": "push ebp; mov ebp,; push -1; push 0x4aecb0; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x44dbd0", "name": "Vector_Too_Long [0x44dbd0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ac2a8; mov eax,", "comment": "string \"vector<T> too long\"", "area": "General"}
+{"va": "0x44ea30", "name": "Leaf_Helper [0x44ea30]", "example": "push ebp; mov ebp,; push -1; push 0x4b1630; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x44eb30", "name": "Leaf_Helper [0x44eb30]", "example": "push ebp; mov ebp,; push -1; push 0x4b1610; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x44ee30", "name": "Leaf_Helper [0x44ee30]", "example": "push ebp; mov ebp,; push -1; push 0x4a6cb0; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x44eec0", "name": "Leaf_Helper [0x44eec0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6c90; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x44f1a0", "name": "Leaf_Helper [0x44f1a0]", "example": "push ebp; mov ebp,; push -1; push 0x4a8250; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x44f220", "name": "Leaf_Helper [0x44f220]", "example": "push ebp; mov ebp,; push -1; push 0x4a8230; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x44fd20", "name": "Leaf_Helper [0x44fd20]", "example": "push ebp; mov ebp,; and esp,; push ecx; mov edx,; push esi", "comment": "no calls in head", "area": "General"}
+{"va": "0x44fe40", "name": "Calls_449300 [0x44fe40]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; mov ebx,", "comment": "calls 0x449300", "area": "General"}
+{"va": "0x44fef0", "name": "Leaf_Helper [0x44fef0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; mov ecx,; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x4500b0", "name": "Calls_449300 [0x4500b0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; test byte; push ebx", "comment": "calls 0x449300", "area": "General"}
+{"va": "0x4502b0", "name": "Calls_449300 [0x4502b0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; mov eax,; xor eax,", "comment": "calls 0x449300", "area": "General"}
+{"va": "0x4504e0", "name": "Calls_480E6B [0x4504e0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6b50; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x450620", "name": "List_Too_Long [0x450620]", "example": "push ebp; mov ebp,; push -1; push 0x4a6b30; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x450c20", "name": "Leaf_Helper [0x450c20]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ac1eb; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x450e50", "name": "Please_Type_All [0x450e50]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aec7e; mov eax,", "comment": "string \"please type to all input field\"", "area": "General"}
+{"va": "0x4512e0", "name": "Leaf_Helper [0x4512e0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aec22; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x451470", "name": "Calls_458230 [0x451470]", "example": "push ebp; mov ebp,; and esp,; push ecx; mov eax,; push ebx", "comment": "calls 0x458230", "area": "General"}
+{"va": "0x451790", "name": "Calls_4A0900 [0x451790]", "example": "push ebp; mov ebp,; and esp,; mov eax,; call 0x4a0900; mov eax,", "comment": "calls 0x4a0900", "area": "General"}
+{"va": "0x452a40", "name": "Calls_453790 [0x452a40]", "example": "push ebp; mov ebp,; and esp,; push esi; mov esi,; mov ecx,", "comment": "calls 0x453790", "area": "General"}
+{"va": "0x452f00", "name": "Map_Set_Too [0x452f00]", "example": "push ebp; mov ebp,; push -1; push 0x4a6ae0; mov eax,; push eax", "comment": "string \"map/set<T> too long\"", "area": "World"}
+{"va": "0x453390", "name": "Map_Set_Argument [0x453390]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x4534a0", "name": "Calls_480E6B [0x4534a0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6ac0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x4535c0", "name": "Leaf_Helper [0x4535c0]", "example": "push ebp; mov ebp,; and esp,; mov ecx,; test ecx,; jne 0x4535d1", "comment": "no calls in head", "area": "General"}
+{"va": "0x4535f0", "name": "Leaf_Helper [0x4535f0]", "example": "push ebp; mov ebp,; and esp,; mov edx,; test edx,; jne 0x453601", "comment": "no calls in head", "area": "General"}
+{"va": "0x453790", "name": "List_Too_Long [0x453790]", "example": "push ebp; mov ebp,; push -1; push 0x4a6aa0; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x453950", "name": "List_Argument [0x453950]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4a99d8; mov eax,", "comment": "string \"invalid list<T> argument\"", "area": "General"}
+{"va": "0x453c20", "name": "Map_Set_Iterator [0x453c20]", "example": "push ebp; mov ebp,; push -1; push 0x4a8e65; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x453dd0", "name": "List_Too_Long [0x453dd0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6a80; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x454410", "name": "Calls_480E6B [0x454410]", "example": "push ebp; mov ebp,; push -1; push 0x4a6a60; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x455270", "name": "Servermoniterview [0x455270]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; push edi", "comment": "string \"ServerMoniterView\"", "area": "General"}
+{"va": "0x455390", "name": "Calls_454D90 [0x455390]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push ebp", "comment": "calls 0x454d90", "area": "General"}
+{"va": "0x4554a0", "name": "Leaf_Helper [0x4554a0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aeb5b; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4555f0", "name": "Calls_456B90 [0x4555f0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push esi", "comment": "calls 0x456b90", "area": "General"}
+{"va": "0x4556e0", "name": "Leaf_Helper [0x4556e0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; mov eax,; xor eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x455870", "name": "Work_Jmx_Serverframework [0x455870]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ac008; mov eax,", "comment": "string \"D:\\WORK2005\\JMX_ServerFramework\\ServerFramework\\ServerMoniterView.cpp\"", "area": "General"}
+{"va": "0x456110", "name": "Calls_449300 [0x456110]", "example": "push ebp; mov ebp,; and esp,; sub esp,; mov eax,; xor eax,", "comment": "calls 0x449300", "area": "General"}
+{"va": "0x4562c0", "name": "Start_Moniter [0x4562c0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; mov eax,; xor eax,", "comment": "string \"Start Moniter\"", "area": "General"}
+{"va": "0x456dd0", "name": "Map_Set_Too [0x456dd0]", "example": "push ebp; mov ebp,; push -1; push 0x4a69e0; mov eax,; push eax", "comment": "string \"map/set<T> too long\"", "area": "World"}
+{"va": "0x4572f0", "name": "Map_Set_Argument [0x4572f0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x457510", "name": "List_Too_Long [0x457510]", "example": "push ebp; mov ebp,; push -1; push 0x4a69c0; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x4577f0", "name": "Map_Set_Iterator [0x4577f0]", "example": "push ebp; mov ebp,; push -1; push 0x4a69a5; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x457bc0", "name": "Calls_480E6B [0x457bc0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6980; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x459170", "name": "Leaf_Helper [0x459170]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aeaab; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4595f0", "name": "Debug_Assertion [0x4595f0]", "example": "push ebp; mov ebp,; push -2; push 0x4ca388; push 0x484420; mov eax,", "comment": "string \"Debug Assertion Failed.\"", "area": "General"}
+{"va": "0x4599e0", "name": "Calls_483C4B [0x4599e0]", "example": "push ebp; mov ebp,; push -2; push 0x4c3550; push 0x484420; mov eax,", "comment": "calls 0x483c4b", "area": "General"}
+{"va": "0x459ea0", "name": "Vector_Too_Long [0x459ea0]", "example": "push ebp; mov ebp,; push -1; push 0x4abf20; mov eax,; push eax", "comment": "string \"vector<T> too long\"", "area": "General"}
+{"va": "0x45c7c0", "name": "Csockstream_Onfilesent_Session [0x45c7c0]", "example": "push ebp; mov ebp,; and esp,; push ecx; push ebx; mov ebx,", "comment": "string \"CSockStream::_OnFileSent() - Session\"", "area": "Network"}
+{"va": "0x45ce50", "name": "Active_Session_Onmsgreceivedbeforehandshak [0x45ce50]", "example": "push ebp; mov ebp,; and esp,; sub esp,; mov eax,; xor eax,", "comment": "string \"ACTIVE_SESSION::_OnMsgReceivedBeforeHandshake() - Handshake ServerSignature Error[MsgID: 0x%x]\"", "area": "Network"}
+{"va": "0x45ece0", "name": "Calls_480E6B [0x45ece0]", "example": "push ebp; mov ebp,; push -1; push 0x4a68d0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x45f270", "name": "Cchunkallocatorst_Allocitemblock [0x45f270]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b058b; mov eax,", "comment": "string \"CChunkAllocatorST::AllocItemBlock() Failed\"", "area": "Security"}
+{"va": "0x45f6c0", "name": "Calls_45FB50 [0x45f6c0]", "example": "push ebp; mov ebp,; and esp,; push esi; mov esi,; mov ecx,", "comment": "calls 0x45fb50", "area": "General"}
+{"va": "0x45f7d0", "name": "Deque_Too_Long [0x45f7d0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aba48; mov eax,", "comment": "string \"deque<T> too long\"", "area": "General"}
+{"va": "0x45f8e0", "name": "Leaf_Helper [0x45f8e0]", "example": "push ebp; mov ebp,; and esp,; push ecx; mov eax,; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x45fa50", "name": "Deque_Argument [0x45fa50]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4a9898; mov eax,", "comment": "string \"invalid deque <T> argument\"", "area": "General"}
+{"va": "0x45fb50", "name": "List_Too_Long [0x45fb50]", "example": "push ebp; mov ebp,; push -1; push 0x4a8180; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x45fec0", "name": "Leaf_Helper [0x45fec0]", "example": "push ebp; mov ebp,; and esp,; push ecx; mov eax,; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x45ff40", "name": "Deque_Too_Long [0x45ff40]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ab9b8; mov eax,", "comment": "string \"deque<T> too long\"", "area": "General"}
+{"va": "0x460060", "name": "Deque_Argument [0x460060]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4a9868; mov eax,", "comment": "string \"invalid deque <T> argument\"", "area": "General"}
+{"va": "0x4617d0", "name": "Leaf_Helper [0x4617d0]", "example": "push ebp; mov ebp,; push -2; push 0x4be810; push 0x484420; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x461880", "name": "Leaf_Helper [0x461880]", "example": "push ebp; mov ebp,; push -2; push 0x4be7f0; push 0x484420; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x461f20", "name": "Leaf_Helper [0x461f20]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ae888; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x462040", "name": "Leaf_Helper [0x462040]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b0558; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x462170", "name": "Leaf_Helper [0x462170]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ae858; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x462c30", "name": "Calls_477FC0 [0x462c30]", "example": "push ebp; mov ebp,; and esp,; mov eax,; sub esp,; push ebx", "comment": "calls 0x477fc0", "area": "General"}
+{"va": "0x462de0", "name": "Calls_478100 [0x462de0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; mov eax,; xor eax,", "comment": "calls 0x478100", "area": "General"}
+{"va": "0x4639c0", "name": "Leaf_Helper [0x4639c0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; mov eax,; xor eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x463b20", "name": "Leaf_Helper [0x463b20]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ae7a8; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x463c60", "name": "Calls_478100 [0x463c60]", "example": "push ebp; mov ebp,; and esp,; sub esp,; mov eax,; xor eax,", "comment": "calls 0x478100", "area": "General"}
+{"va": "0x463f20", "name": "Leaf_Helper [0x463f20]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ae778; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x463ff0", "name": "Establish_Keep_Alive [0x463ff0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ab738; mov eax,", "comment": "string \"cannot establish keep alive session : %d.%d.%d.%d %d (bind %d.%d.%d.%d)\"", "area": "Network"}
+{"va": "0x464180", "name": "Leaf_Helper [0x464180]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ab708; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4642a0", "name": "Leaf_Helper [0x4642a0]", "example": "push ebp; mov ebp,; push -2; push 0x4c1b18; push 0x484420; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x464420", "name": "Netengine_Ver [0x464420]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ae748; mov eax,", "comment": "string \"netengine(ver %0.2f)\"", "area": "General"}
+{"va": "0x464de0", "name": "Leaf_Helper [0x464de0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; mov ebx,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4653d0", "name": "Someone_About_Free [0x4653d0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ae658; mov eax,", "comment": "string \"someone about to free msg already freed !!! [0x%x]\"", "area": "General"}
+{"va": "0x465550", "name": "Calls_466F50 [0x465550]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b0462; mov eax,", "comment": "calls 0x466f50", "area": "General"}
+{"va": "0x465910", "name": "Map_Set_Iterator [0x465910]", "example": "push ebp; mov ebp,; and esp,; push esi; mov esi,; mov ecx,", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x465e80", "name": "Calls_467350 [0x465e80]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "calls 0x467350", "area": "General"}
+{"va": "0x4662d0", "name": "Leaf_Helper [0x4662d0]", "example": "push ebp; mov ebp,; and esp,; push ecx; push ebx; push esi", "comment": "no calls in head", "area": "General"}
+{"va": "0x466410", "name": "Leaf_Helper [0x466410]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push esi", "comment": "no calls in head", "area": "General"}
+{"va": "0x4665b0", "name": "Vector_Subscript [0x4665b0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ab578; mov eax,", "comment": "string \"invalid vector<T> subscript\"", "area": "General"}
+{"va": "0x466d00", "name": "Calls_480E6B [0x466d00]", "example": "push ebp; mov ebp,; push -1; push 0x4a67b0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x467270", "name": "Map_Set_Argument [0x467270]", "example": "push ebp; mov ebp,; and esp,; sub esp,; mov edx,; push esi", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x467bf0", "name": "Calls_480E6B [0x467bf0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6790; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x467d00", "name": "Leaf_Helper [0x467d00]", "example": "push ebp; mov ebp,; push -1; push 0x4ab3d0; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x467f40", "name": "Vector_Too_Long [0x467f40]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ab3a8; mov eax,", "comment": "string \"vector<T> too long\"", "area": "General"}
+{"va": "0x468040", "name": "Leaf_Helper [0x468040]", "example": "push ebp; mov ebp,; and esp,; push ecx; push ebx; push esi", "comment": "no calls in head", "area": "General"}
+{"va": "0x4681a0", "name": "Leaf_Helper [0x4681a0]", "example": "push ebp; mov ebp,; and esp,; push ecx; push ebx; push esi", "comment": "no calls in head", "area": "General"}
+{"va": "0x468360", "name": "Cchunkallocatorst_Allocitemblock [0x468360]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b03cb; mov eax,", "comment": "string \"CChunkAllocatorST::AllocItemBlock() Failed\"", "area": "Security"}
+{"va": "0x468550", "name": "Leaf_Helper [0x468550]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push esi", "comment": "no calls in head", "area": "General"}
+{"va": "0x4686d0", "name": "List_Too_Long [0x4686d0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6770; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x468c80", "name": "Map_Set_Argument [0x468c80]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "string \"invalid map/set<T> argument\"", "area": "World"}
+{"va": "0x4691e0", "name": "Vector_Argument [0x4691e0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6755; mov eax,; push eax", "comment": "string \"invalid vector<T> argument\"", "area": "General"}
+{"va": "0x469660", "name": "Calls_480E6B [0x469660]", "example": "push ebp; mov ebp,; push -1; push 0x4a6730; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x469820", "name": "Calls_46B0A0 [0x469820]", "example": "push ebp; mov ebp,; and esp,; push esi; mov esi,; mov ecx,", "comment": "calls 0x46b0a0", "area": "General"}
+{"va": "0x469bf0", "name": "Map_Set_Iterator [0x469bf0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6715; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x46a020", "name": "Calls_480E6B [0x46a020]", "example": "push ebp; mov ebp,; push -1; push 0x4a66f0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x46a0d0", "name": "List_Subscript [0x46a0d0]", "example": "push ebp; mov ebp,; push -1; push 0x4a66d5; mov eax,; push eax", "comment": "string \"invalid list<T> subscript\"", "area": "General"}
+{"va": "0x46a630", "name": "Map_Set_Iterator [0x46a630]", "example": "push ebp; mov ebp,; push -1; push 0x4a66b0; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x46aa20", "name": "Calls_480E6B [0x46aa20]", "example": "push ebp; mov ebp,; push -1; push 0x4a6690; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x46aeb0", "name": "Deque_Too_Long [0x46aeb0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ab1f8; mov eax,", "comment": "string \"deque<T> too long\"", "area": "General"}
+{"va": "0x46b0a0", "name": "List_Too_Long [0x46b0a0]", "example": "push ebp; mov ebp,; push -1; push 0x4a8020; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x46c2d0", "name": "Calls_47E040 [0x46c2d0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; mov eax,; xor eax,", "comment": "calls 0x47e040", "area": "General"}
+{"va": "0x46c980", "name": "Leaf_Helper [0x46c980]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ae4d8; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x46cc20", "name": "Leaf_Helper [0x46cc20]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b0343; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x46cd80", "name": "Leaf_Helper [0x46cd80]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b0308; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x46cf90", "name": "Ifile_Read_User [0x46cf90]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b02d8; mov eax,", "comment": "string \"IFile::Read() - User Context \"", "area": "General"}
+{"va": "0x46e570", "name": "Cfilesystem_Createfile [0x46e570]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4ae3b8; mov eax,", "comment": "string \"CFileSystem::_CreateFile() \"", "area": "General"}
+{"va": "0x46ea00", "name": "Leaf_Helper [0x46ea00]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b0128; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x46eb80", "name": "Cfilesystem_Getfile [0x46eb80]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b00f8; mov eax,", "comment": "string \"CFileSystem::GetFile() - \"", "area": "Database"}
+{"va": "0x46ecc0", "name": "Leaf_Helper [0x46ecc0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b13b2; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x46f030", "name": "Leaf_Helper [0x46f030]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b1381; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x471260", "name": "List_Argument [0x471260]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4a95e8; mov eax,", "comment": "string \"invalid list<T> argument\"", "area": "General"}
+{"va": "0x471ff0", "name": "List_Argument [0x471ff0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4a95b8; mov eax,", "comment": "string \"invalid list<T> argument\"", "area": "General"}
+{"va": "0x472200", "name": "Vector_Subscript [0x472200]", "example": "push ebp; mov ebp,; push -1; push 0x4ab020; mov eax,; push eax", "comment": "string \"invalid vector<T> subscript\"", "area": "General"}
+{"va": "0x4728d0", "name": "Vector_Subscript [0x4728d0]", "example": "push ebp; mov ebp,; push -1; push 0x4aaf70; mov eax,; push eax", "comment": "string \"invalid vector<T> subscript\"", "area": "General"}
+{"va": "0x472e40", "name": "List_Argument [0x472e40]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4a9588; mov eax,", "comment": "string \"invalid list<T> argument\"", "area": "General"}
+{"va": "0x473050", "name": "Vector_Subscript [0x473050]", "example": "push ebp; mov ebp,; push -1; push 0x4aaec0; mov eax,; push eax", "comment": "string \"invalid vector<T> subscript\"", "area": "General"}
+{"va": "0x473690", "name": "Calls_480E6B [0x473690]", "example": "push ebp; mov ebp,; push -1; push 0x4a6530; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x473720", "name": "Calls_480E6B [0x473720]", "example": "push ebp; mov ebp,; push -1; push 0x4a6510; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x4737f0", "name": "Vector_Too_Long [0x4737f0]", "example": "push ebp; mov ebp,; push -1; push 0x4ae240; mov eax,; push eax", "comment": "string \"vector<T> too long\"", "area": "General"}
+{"va": "0x473a10", "name": "Calls_480E6B [0x473a10]", "example": "push ebp; mov ebp,; push -1; push 0x4a64f0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x473aa0", "name": "Calls_480E6B [0x473aa0]", "example": "push ebp; mov ebp,; push -1; push 0x4a64d0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x473b70", "name": "Leaf_Helper [0x473b70]", "example": "push ebp; mov ebp,; push -1; push 0x4ae220; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x473c80", "name": "Vector_Too_Long [0x473c80]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aae38; mov eax,", "comment": "string \"vector<T> too long\"", "area": "General"}
+{"va": "0x473db0", "name": "Calls_480E6B [0x473db0]", "example": "push ebp; mov ebp,; push -1; push 0x4a64b0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x473e40", "name": "Calls_480E6B [0x473e40]", "example": "push ebp; mov ebp,; push -1; push 0x4a8ca0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x473f10", "name": "Leaf_Helper [0x473f10]", "example": "push ebp; mov ebp,; push -1; push 0x4ae200; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x474020", "name": "Vector_Too_Long [0x474020]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aae08; mov eax,", "comment": "string \"vector<T> too long\"", "area": "General"}
+{"va": "0x475250", "name": "Leaf_Helper [0x475250]", "example": "push ebp; mov ebp,; push -1; push 0x4b0070; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x475350", "name": "Leaf_Helper [0x475350]", "example": "push ebp; mov ebp,; push -1; push 0x4b0050; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x4754f0", "name": "Leaf_Helper [0x4754f0]", "example": "push ebp; mov ebp,; push -1; push 0x4b1310; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x4758f0", "name": "Leaf_Helper [0x4758f0]", "example": "push ebp; mov ebp,; push -1; push 0x4a6490; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x475980", "name": "Leaf_Helper [0x475980]", "example": "push ebp; mov ebp,; push -1; push 0x4a6470; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x475a10", "name": "Leaf_Helper [0x475a10]", "example": "push ebp; mov ebp,; push -1; push 0x4a6450; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x475f50", "name": "Leaf_Helper [0x475f50]", "example": "push ebp; mov ebp,; push -1; push 0x4a7fa0; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x475fd0", "name": "Leaf_Helper [0x475fd0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7f80; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x476050", "name": "Leaf_Helper [0x476050]", "example": "push ebp; mov ebp,; push -1; push 0x4a7f60; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x478ed0", "name": "Cchunkallocatorst_Allocitemblock [0x478ed0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4b221b; mov eax,", "comment": "string \"CChunkAllocatorST::AllocItemBlock() Failed\"", "area": "Security"}
+{"va": "0x4793f0", "name": "Calls_479560 [0x4793f0]", "example": "push ebp; mov ebp,; and esp,; push esi; mov esi,; mov ecx,", "comment": "calls 0x479560", "area": "General"}
+{"va": "0x479450", "name": "Deque_Too_Long [0x479450]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aac88; mov eax,", "comment": "string \"deque<T> too long\"", "area": "General"}
+{"va": "0x479560", "name": "List_Too_Long [0x479560]", "example": "push ebp; mov ebp,; push -1; push 0x4a7f40; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x4796f0", "name": "Leaf_Helper [0x4796f0]", "example": "push ebp; mov ebp,; and esp,; push ecx; mov eax,; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x479780", "name": "Deque_Argument [0x479780]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4a94c8; mov eax,", "comment": "string \"invalid deque <T> argument\"", "area": "General"}
+{"va": "0x479b10", "name": "Leaf_Helper [0x479b10]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push esi", "comment": "no calls in head", "area": "General"}
+{"va": "0x479bc0", "name": "Leaf_Helper [0x479bc0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "no calls in head", "area": "General"}
+{"va": "0x479fa0", "name": "Calls_479FF0 [0x479fa0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "calls 0x479ff0", "area": "General"}
+{"va": "0x47a110", "name": "Calls_480E6B [0x47a110]", "example": "push ebp; mov ebp,; push -1; push 0x4a7f20; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x47a8a0", "name": "Calls_47B5D0 [0x47a8a0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push esi", "comment": "calls 0x47b5d0", "area": "General"}
+{"va": "0x47aaf0", "name": "Leaf_Helper [0x47aaf0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4afee5; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x47b340", "name": "Calls_47B660 [0x47b340]", "example": "push ebp; mov ebp,; and esp,; push esi; mov esi,; mov ecx,", "comment": "calls 0x47b660", "area": "General"}
+{"va": "0x47b490", "name": "Calls_480E6B [0x47b490]", "example": "push ebp; mov ebp,; push -1; push 0x4a6430; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x47b5d0", "name": "Leaf_Helper [0x47b5d0]", "example": "push ebp; mov ebp,; and esp,; mov ecx,; test ecx,; jne 0x47b5e1", "comment": "no calls in head", "area": "General"}
+{"va": "0x47b600", "name": "Leaf_Helper [0x47b600]", "example": "push ebp; mov ebp,; and esp,; mov edx,; test edx,; jne 0x47b611", "comment": "no calls in head", "area": "General"}
+{"va": "0x47b660", "name": "List_Too_Long [0x47b660]", "example": "push ebp; mov ebp,; push -1; push 0x4a6410; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x47b820", "name": "List_Argument [0x47b820]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4a9438; mov eax,", "comment": "string \"invalid list<T> argument\"", "area": "General"}
+{"va": "0x47bbf0", "name": "Leaf_Helper [0x47bbf0]", "example": "push ebp; mov ebp,; and esp,; mov eax,; sub esp,; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x47bc80", "name": "Calls_47BEE0 [0x47bc80]", "example": "push ebp; mov ebp,; and esp,; push ecx; push ebx; mov ebx,", "comment": "calls 0x47bee0", "area": "General"}
+{"va": "0x47c2e0", "name": "Leaf_Helper [0x47c2e0]", "example": "push ebp; mov ebp,; push -1; push 0x4aaab0; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x47c500", "name": "Vector_Too_Long [0x47c500]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4aaa88; mov eax,", "comment": "string \"vector<T> too long\"", "area": "General"}
+{"va": "0x47c930", "name": "Leaf_Helper [0x47c930]", "example": "push ebp; mov ebp,; push -1; push 0x4a63f0; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x47cbd0", "name": "Leaf_Helper [0x47cbd0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7f00; mov eax,; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x47d220", "name": "Leaf_Helper [0x47d220]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4afd78; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x47d570", "name": "Calls_461F20 [0x47d570]", "example": "push ebp; mov ebp,; and esp,; push esi; mov esi,; mov eax,", "comment": "calls 0x461f20", "area": "General"}
+{"va": "0x47dba0", "name": "List_Too_Long [0x47dba0]", "example": "push ebp; mov ebp,; push -1; push 0x4a7ee0; mov eax,; push eax", "comment": "string \"list<T> too long\"", "area": "General"}
+{"va": "0x47e3a0", "name": "Work_Jmx_Library [0x47e3a0]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push ebx; push esi", "comment": "string \"D:\\WORK2005\\JMX_Library\\BSLib\\thread\\threadmanager.cpp\"", "area": "Thread"}
+{"va": "0x47e8c0", "name": "Leaf_Helper [0x47e8c0]", "example": "push ebp; mov ebp,; and esp,; push -1; push 0x4adfa8; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x47ef90", "name": "Calls_47F100 [0x47ef90]", "example": "push ebp; mov ebp,; and esp,; sub esp,; push esi; mov esi,", "comment": "calls 0x47f100", "area": "General"}
+{"va": "0x47f290", "name": "Map_Set_Iterator [0x47f290]", "example": "push ebp; mov ebp,; push -1; push 0x4a63d5; mov eax,; push eax", "comment": "string \"invalid map/set<T> iterator\"", "area": "World"}
+{"va": "0x47f7e0", "name": "Calls_480E6B [0x47f7e0]", "example": "push ebp; mov ebp,; push -1; push 0x4a63b0; mov eax,; push eax", "comment": "calls 0x480e6b", "area": "General"}
+{"va": "0x480e6b", "name": "Calls_48478E [0x480e6b]", "example": "push ebp; mov ebp,; sub esp,; jmp 0x480e80; push dword; call 0x48478e", "comment": "calls 0x48478e", "area": "General"}
+{"va": "0x481010", "name": "Calls_485920 [0x481010]", "example": "push ebp; mov ebp,; push esi; mov esi,; push edi; xor edi,", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x4810e6", "name": "Unknown_Exception [0x4810e6]", "example": "push ebp; mov ebp,; mov eax,; push esi; push edi; xor edi,", "comment": "string \"Unknown exception\"", "area": "General"}
+{"va": "0x481478", "name": "Calls_485920 [0x481478]", "example": "push ebp; mov ebp,; sub esp,; push ebx; xor ebx,; cmp dword", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x481569", "name": "Calls_481478 [0x481569]", "example": "push ebp; mov ebp,; push dword; push dword; push dword; push dword", "comment": "calls 0x481478", "area": "General"}
+{"va": "0x481591", "name": "Calls_485920 [0x481591]", "example": "push ebp; mov ebp,; push ebx; xor ebx,; cmp dword; jne 0x4815b9", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x481632", "name": "Calls_485920 [0x481632]", "example": "push ebp; mov ebp,; push ecx; push ebx; xor ebx,; cmp dword", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x481737", "name": "Calls_481632 [0x481737]", "example": "push ebp; mov ebp,; push dword; push 0; push dword; push dword", "comment": "calls 0x481632", "area": "General"}
+{"va": "0x48177c", "name": "Calls_481478 [0x48177c]", "example": "push ebp; mov ebp,; push dword; push dword; push dword; push dword", "comment": "calls 0x481478", "area": "General"}
+{"va": "0x481ef4", "name": "Leaf_Helper [0x481ef4]", "example": "push ebp; mov ebp,; push ecx; push ecx; push ebx; xor ebx,", "comment": "no calls in head", "area": "General"}
+{"va": "0x482205", "name": "Calls_485920 [0x482205]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x482384", "name": "Calls_4822F1 [0x482384]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push esi; push dword", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x482457", "name": "Calls_485920 [0x482457]", "example": "push ebp; mov ebp,; sub esp,; push ebx; xor ebx,; cmp dword", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x482508", "name": "Calls_481591 [0x482508]", "example": "push ebp; mov ebp,; lea eax,; push eax; push dword; push dword", "comment": "calls 0x481591", "area": "General"}
+{"va": "0x482525", "name": "Calls_481632 [0x482525]", "example": "push ebp; mov ebp,; lea eax,; push eax; push 0; push dword", "comment": "calls 0x481632", "area": "General"}
+{"va": "0x482544", "name": "Calls_481632 [0x482544]", "example": "push ebp; mov ebp,; lea eax,; push eax; push dword; push dword", "comment": "calls 0x481632", "area": "General"}
+{"va": "0x482580", "name": "Calls_48177C [0x482580]", "example": "push ebp; mov ebp,; lea eax,; push eax; push dword; push dword", "comment": "calls 0x48177c", "area": "General"}
+{"va": "0x4825eb", "name": "Calls_482E44 [0x4825eb]", "example": "push ebp; mov ebp,; cmp dword; je 0x48260b; push dword; push dword", "comment": "calls 0x482e44", "area": "General"}
+{"va": "0x48260d", "name": "Calls_485920 [0x48260d]", "example": "push ebp; mov ebp,; sub esp,; push esi; mov esi,; push edi", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x48285e", "name": "Calls_485920 [0x48285e]", "example": "push ebp; mov ebp,; sub esp,; push ebx; xor ebx,; push edi", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x482abd", "name": "Calls_48D070 [0x482abd]", "example": "push ebp; mov ebp,; push ecx; push ecx; lea eax,; push eax", "comment": "calls 0x48d070", "area": "General"}
+{"va": "0x482af6", "name": "Calls_485920 [0x482af6]", "example": "push ebp; mov ebp,; push ecx; push ebx; push esi; mov esi,", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x482bd1", "name": "Calls_482AF6 [0x482bd1]", "example": "push ebp; mov ebp,; cmp dword; mov eax,; jne 0x482be7; test eax,", "comment": "calls 0x482af6", "area": "General"}
+{"va": "0x482bf9", "name": "Calls_482AF6 [0x482bf9]", "example": "push ebp; mov ebp,; xor eax,; cmp dword; jne 0x482c0a; cmp dword", "comment": "calls 0x482af6", "area": "General"}
+{"va": "0x482c36", "name": "Calls_485920 [0x482c36]", "example": "push ebp; mov ebp,; sub esp,; push ebx; xor ebx,; cmp edi,", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x482d2c", "name": "Leaf_Helper [0x482d2c]", "example": "push ebp; mov ebp,; xor eax,; cmp dword; jne 0x482d46; cmp dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x482d5f", "name": "Calls_482C36 [0x482d5f]", "example": "push ebp; mov ebp,; push edi; mov edi,; push 0; push dword", "comment": "calls 0x482c36", "area": "General"}
+{"va": "0x482f6f", "name": "Leaf_Helper [0x482f6f]", "example": "push ebp; mov ebp,; pop ebp; jmp 0x482e44", "comment": "no calls in head", "area": "General"}
+{"va": "0x482f78", "name": "Calls_484921 [0x482f78]", "example": "push ebp; mov ebp,; push dword; call 0x484921; test eax,; pop ecx", "comment": "calls 0x484921", "area": "General"}
+{"va": "0x482fac", "name": "Calls_48D280 [0x482fac]", "example": "push ebp; mov ebp,; pop ebp; jmp 0x482f78; cmp dword; push esi", "comment": "calls 0x48d280", "area": "General"}
+{"va": "0x483036", "name": "Calls_485920 [0x483036]", "example": "push ebp; mov ebp,; push ebx; push esi; mov esi,; xor ebx,", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x4830c9", "name": "Calls_485920 [0x4830c9]", "example": "push ebp; mov ebp,; push ecx; push esi; push edi; xor edi,", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x4833ac", "name": "Calls_485920 [0x4833ac]", "example": "push ebp; mov ebp,; push ecx; push ebx; push esi; mov esi,", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x4834c0", "name": "Leaf_Helper [0x4834c0]", "example": "push ebp; mov ebp,; push edi; push esi; mov esi,; mov ecx,", "comment": "no calls in head", "area": "General"}
+{"va": "0x483825", "name": "Calls_485920 [0x483825]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push edi; mov edi,", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x483b03", "name": "Calls_485920 [0x483b03]", "example": "push ebp; mov ebp,; push ecx; push ebx; push edi; mov edi,", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x483c4b", "name": "Leaf_Helper [0x483c4b]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; push esi; push edi", "comment": "no calls in head", "area": "General"}
+{"va": "0x483c95", "name": "Leaf_Helper [0x483c95]", "example": "push ebp; mov ebp,; push ecx; push ebx; mov eax,; add eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x483cda", "name": "Calls_4A0DB8 [0x483cda]", "example": "push ebp; mov ebp,; push ecx; push ecx; push ebx; push esi", "comment": "calls 0x4a0db8", "area": "General"}
+{"va": "0x483d2c", "name": "Calls_48EAA0 [0x483d2c]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push esi; push edi", "comment": "calls 0x48eaa0", "area": "General"}
+{"va": "0x483d62", "name": "Calls_48EAA0 [0x483d62]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push esi; push edi", "comment": "calls 0x48eaa0", "area": "General"}
+{"va": "0x483d98", "name": "Calls_48EAA0 [0x483d98]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push esi; push edi", "comment": "calls 0x48eaa0", "area": "General"}
+{"va": "0x483e18", "name": "Leaf_Helper [0x483e18]", "example": "push ebp; mov ebp,; sub esp,; push ebx; cmp dword; jne 0x483e3a", "comment": "no calls in head", "area": "General"}
+{"va": "0x483eed", "name": "Calls_480D70 [0x483eed]", "example": "push ebp; mov ebp,; push ecx; push ebx; cld; mov eax,", "comment": "calls 0x480d70", "area": "General"}
+{"va": "0x483f8a", "name": "Calls_48434A [0x483f8a]", "example": "push ebp; mov ebp,; push ecx; push ebx; push esi; push edi", "comment": "calls 0x48434a", "area": "General"}
+{"va": "0x484092", "name": "Leaf_Helper [0x484092]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; and dword; lea ecx,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4841fa", "name": "Leaf_Helper [0x4841fa]", "example": "push ebp; mov ebp,; sub esp,; mov dword; mov dword; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x48483e", "name": "Kernel_Dll [0x48483e]", "example": "push ebp; mov ebp,; push ecx; push ecx; push ebx; push esi", "comment": "string \"KERNEL32.DLL\"", "area": "General"}
+{"va": "0x485580", "name": "Leaf_Helper [0x485580]", "example": "push ebp; mov ebp,; push edi; push esi; mov esi,; mov ecx,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4859ee", "name": "Calls_4822F1 [0x4859ee]", "example": "push ebp; mov ebp,; sub esp,; push esi; push edi; push dword", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x485c19", "name": "Calls_4859EE [0x485c19]", "example": "push ebp; mov ebp,; xor eax,; cmp dword; push eax; push dword", "comment": "calls 0x4859ee", "area": "General"}
+{"va": "0x485c5d", "name": "Calls_4859EE [0x485c5d]", "example": "push ebp; mov ebp,; cmp dword; push 1; push dword; push dword", "comment": "calls 0x4859ee", "area": "General"}
+{"va": "0x485ca2", "name": "Calls_4822F1 [0x485ca2]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push edi; push dword", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x485f36", "name": "Calls_485CA2 [0x485f36]", "example": "push ebp; mov ebp,; xor eax,; cmp dword; push eax; push dword", "comment": "calls 0x485ca2", "area": "General"}
+{"va": "0x485f7a", "name": "Calls_485CA2 [0x485f7a]", "example": "push ebp; mov ebp,; cmp dword; push 1; push dword; push dword", "comment": "calls 0x485ca2", "area": "General"}
+{"va": "0x486194", "name": "Calls_4953FA [0x486194]", "example": "push ebp; mov ebp,; cmp word; jne 0x4861a5; mov dword; push dword", "comment": "calls 0x4953fa", "area": "General"}
+{"va": "0x486398", "name": "Calls_48A258 [0x486398]", "example": "push ebp; mov ebp,; push ecx; push esi; mov esi,; push esi", "comment": "calls 0x48a258", "area": "General"}
+{"va": "0x48652b", "name": "Calls_4864F8 [0x48652b]", "example": "push ebp; mov ebp,; push esi; mov esi,; jmp 0x486546; mov ecx,", "comment": "calls 0x4864f8", "area": "General"}
+{"va": "0x486f8b", "name": "Calls_486F58 [0x486f8b]", "example": "push ebp; mov ebp,; push esi; mov esi,; jmp 0x486fa6; mov ecx,", "comment": "calls 0x486f58", "area": "General"}
+{"va": "0x487b05", "name": "Calls_487AD2 [0x487b05]", "example": "push ebp; mov ebp,; push esi; mov esi,; jmp 0x487b20; mov ecx,", "comment": "calls 0x487ad2", "area": "General"}
+{"va": "0x488d82", "name": "Calls_484AFA [0x488d82]", "example": "push ebp; mov ebp,; push ecx; push ecx; push esi; call 0x484afa", "comment": "calls 0x484afa", "area": "General"}
+{"va": "0x48903d", "name": "Leaf_Helper [0x48903d]", "example": "push ebp; mov ebp,; push ecx; mov ecx,; push ebx; xor eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4891d5", "name": "Calls_48B2A9 [0x4891d5]", "example": "push ebp; mov ebp,; sub esp,; push ebx; xor ebx,; cmp dword", "comment": "calls 0x48b2a9", "area": "General"}
+{"va": "0x489697", "name": "Calls_48515F [0x489697]", "example": "push ebp; mov ebp,; push ecx; push ecx; push esi; lea eax,", "comment": "calls 0x48515f", "area": "General"}
+{"va": "0x4897c6", "name": "Leaf_Helper [0x4897c6]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; and dword; and dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x489c70", "name": "Leaf_Helper [0x489c70]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; push ebx; xor ebx,", "comment": "no calls in head", "area": "General"}
+{"va": "0x48a162", "name": "Calls_4A0DB8 [0x48a162]", "example": "push ebp; mov ebp,; push ebx; push esi; push edi; push 0", "comment": "calls 0x4a0db8", "area": "General"}
+{"va": "0x48a7e8", "name": "Calls_4822F1 [0x48a7e8]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x48a9e1", "name": "Calls_4822F1 [0x48a9e1]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x48aa42", "name": "Leaf_Helper [0x48aa42]", "example": "push ebp; mov ebp,; push ebx; push esi; mov esi,; xor ebx,", "comment": "no calls in head", "area": "General"}
+{"va": "0x48ae80", "name": "Calls_4822F1 [0x48ae80]", "example": "push ebp; mov ebp,; sub esp,; push ebx; xor ebx,; push ebx", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x48aefa", "name": "Calls_48AE80 [0x48aefa]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "calls 0x48ae80", "area": "General"}
+{"va": "0x48b0d3", "name": "Calls_4822F1 [0x48b0d3]", "example": "push ebp; mov ebp,; sub esp,; push 0; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x48b81f", "name": "Calls_485500 [0x48b81f]", "example": "push ebp; mov ebp,; push ebx; push esi; push edi; mov edi,", "comment": "calls 0x485500", "area": "General"}
+{"va": "0x48b948", "name": "Calls_4821A0 [0x48b948]", "example": "push ebp; mov ebp,; push ebx; push esi; mov esi,; push esi", "comment": "calls 0x4821a0", "area": "General"}
+{"va": "0x48c430", "name": "Leaf_Helper [0x48c430]", "example": "push ebp; mov ebp,; push edi; mov edi,; xor eax,; or ecx,", "comment": "no calls in head", "area": "General"}
+{"va": "0x48c45d", "name": "Calls_485920 [0x48c45d]", "example": "push ebp; mov ebp,; sub esp,; push ebx; xor ebx,; cmp dword", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x48c4f0", "name": "Calls_485920 [0x48c4f0]", "example": "push ebp; mov ebp,; sub esp,; push esi; xor esi,; cmp dword", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x48c916", "name": "Leaf_Helper [0x48c916]", "example": "push ebp; mov ebp,; sub esp,; and dword; cmp dword; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x48cb0b", "name": "Calls_48CF1A [0x48cb0b]", "example": "push ebp; mov ebp,; push ecx; push esi; lea eax,; xor esi,", "comment": "calls 0x48cf1a", "area": "General"}
+{"va": "0x48cd81", "name": "Calls_485920 [0x48cd81]", "example": "push ebp; mov ebp,; push ecx; push ebx; push esi; mov esi,", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x48cfb6", "name": "Leaf_Helper [0x48cfb6]", "example": "push ebp; mov ebp,; mov eax,; push ebx; xor ebx,; cmp eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x48d17d", "name": "Calls_4822F1 [0x48d17d]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push dword; lea ecx,", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x48d280", "name": "Leaf_Helper [0x48d280]", "example": "push ebp; mov ebp,; push ecx; push ecx; push ebx; push esi", "comment": "no calls in head", "area": "General"}
+{"va": "0x48d433", "name": "Calls_48D315 [0x48d433]", "example": "push ebp; mov ebp,; push ecx; and dword; push edi; lea eax,", "comment": "calls 0x48d315", "area": "General"}
+{"va": "0x48d510", "name": "Calls_485100 [0x48d510]", "example": "push ebp; mov ebp,; mov eax,; push dword; call dword; pop ebp", "comment": "calls 0x485100", "area": "General"}
+{"va": "0x48d600", "name": "Calls_48D53D [0x48d600]", "example": "push ebp; mov ebp,; mov eax,; push esi; lea esi,; cmp dword", "comment": "calls 0x48d53d", "area": "General"}
+{"va": "0x48d64b", "name": "Calls_485920 [0x48d64b]", "example": "push ebp; mov ebp,; sub esp,; push ebx; xor ebx,; cmp dword", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x48d6f5", "name": "Leaf_Helper [0x48d6f5]", "example": "push ebp; mov ebp,; sub esp,; mov dword; mov dword; mov esi,", "comment": "no calls in head", "area": "General"}
+{"va": "0x48d77c", "name": "Leaf_Helper [0x48d77c]", "example": "push ebp; mov ebp,; sub esp,; mov dword; mov dword; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x48d910", "name": "Leaf_Helper [0x48d910]", "example": "push ebp; mov ebp,; push -2; push 0x4bd518; push 0x484420; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x48df71", "name": "Calls_48434A [0x48df71]", "example": "push ebp; mov ebp,; sub esp,; test edi,; jne 0x48df85; call 0x48434a", "comment": "calls 0x48434a", "area": "General"}
+{"va": "0x48e491", "name": "Leaf_Helper [0x48e491]", "example": "push ebp; mov ebp,; mov eax,; sub esp,; test eax,; jne 0x48e4a0", "comment": "no calls in head", "area": "General"}
+{"va": "0x48e5d4", "name": "Calls_48E400 [0x48e5d4]", "example": "push ebp; mov ebp,; cmp dword; je 0x48e5ed; push dword; push ebx", "comment": "calls 0x48e400", "area": "General"}
+{"va": "0x48e640", "name": "Calls_484B71 [0x48e640]", "example": "push ebp; mov ebp,; push ecx; push ecx; push esi; mov esi,", "comment": "calls 0x484b71", "area": "General"}
+{"va": "0x48e732", "name": "Bad_Exception [0x48e732]", "example": "push ebp; mov ebp,; sub esp,; mov ecx,; push ebx; mov ebx,", "comment": "string \"bad exception\"", "area": "General"}
+{"va": "0x48eaa0", "name": "Calls_484B71 [0x48eaa0]", "example": "push ebp; mov ebp,; push ebx; push esi; push edi; call 0x484b71", "comment": "calls 0x484b71", "area": "General"}
+{"va": "0x48eb90", "name": "Calls_4983A4 [0x48eb90]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push ecx; mov eax,", "comment": "calls 0x4983a4", "area": "General"}
+{"va": "0x48ecf2", "name": "Leaf_Helper [0x48ecf2]", "example": "push ebp; mov ebp,; sub esp,; mov ecx,; mov eax,; push esi", "comment": "no calls in head", "area": "General"}
+{"va": "0x48f0b6", "name": "Leaf_Helper [0x48f0b6]", "example": "push ebp; mov ebp,; push ecx; push ecx; mov ecx,; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x48f1bc", "name": "Leaf_Helper [0x48f1bc]", "example": "push ebp; mov ebp,; sub esp,; mov ecx,; mov eax,; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x48f568", "name": "Leaf_Helper [0x48f568]", "example": "push ebp; mov ebp,; mov eax,; sub esp,; push ebx; xor ebx,", "comment": "no calls in head", "area": "General"}
+{"va": "0x48f8f2", "name": "Leaf_Helper [0x48f8f2]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; mov ecx,; imul eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x48fdf0", "name": "Calls_485920 [0x48fdf0]", "example": "push ebp; mov ebp,; mov ecx,; push ebx; xor ebx,; cmp ecx,", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x490569", "name": "Leaf_Helper [0x490569]", "example": "push ebp; mov ebp,; sub esp,; mov dword; mov edi,; mov ecx,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4905c0", "name": "Leaf_Helper [0x4905c0]", "example": "push ebp; mov ebp,; sub esp,; mov dword; mov eax,; cdq", "comment": "no calls in head", "area": "General"}
+{"va": "0x49064f", "name": "Calls_4822F1 [0x49064f]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push dword; lea ecx,", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x491110", "name": "Calls_494C63 [0x491110]", "example": "push ebp; mov ebp,; sub esp,; xor ecx,; mov eax,; and dword", "comment": "calls 0x494c63", "area": "General"}
+{"va": "0x491143", "name": "Calls_494C63 [0x491143]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; and dword; and dword", "comment": "calls 0x494c63", "area": "General"}
+{"va": "0x491300", "name": "Calls_491258 [0x491300]", "example": "push ebp; mov ebp,; push esi; push edi; mov edi,; call 0x491258", "comment": "calls 0x491258", "area": "General"}
+{"va": "0x491609", "name": "Calls_491447 [0x491609]", "example": "push ebp; mov ebp,; push esi; push edi; mov esi,; call 0x491447", "comment": "calls 0x491447", "area": "General"}
+{"va": "0x49167c", "name": "Calls_49118A [0x49167c]", "example": "push ebp; mov ebp,; mov eax,; cmp byte; push dword; jne 0x49169c", "comment": "calls 0x49118a", "area": "General"}
+{"va": "0x491898", "name": "Leaf_Helper [0x491898]", "example": "push ebp; mov ebp,; push ebx; push esi; mov esi,; and dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x491968", "name": "Leaf_Helper [0x491968]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x4919d1", "name": "Leaf_Helper [0x4919d1]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x491bc8", "name": "Leaf_Helper [0x491bc8]", "example": "push ebp; mov ebp,; push ecx; push ecx; mov eax,; mov al,", "comment": "no calls in head", "area": "General"}
+{"va": "0x491c6e", "name": "Calls_491867 [0x491c6e]", "example": "push ebp; mov ebp,; mov eax,; mov al,; test al,; mov ecx,", "comment": "calls 0x491867", "area": "General"}
+{"va": "0x491dfa", "name": "Leaf_Helper [0x491dfa]", "example": "push ebp; mov ebp,; sub esp,; push esi; mov esi,; and dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x491eda", "name": "Calls_490E22 [0x491eda]", "example": "push ebp; mov ebp,; push ecx; push ecx; push esi; mov esi,", "comment": "calls 0x490e22", "area": "General"}
+{"va": "0x491f29", "name": "Calls_491841 [0x491f29]", "example": "push ebp; mov ebp,; push ecx; push ecx; push dword; lea ecx,", "comment": "calls 0x491841", "area": "General"}
+{"va": "0x491f4b", "name": "Calls_4911E0 [0x491f4b]", "example": "push ebp; mov ebp,; push ecx; push ecx; push dword; lea ecx,", "comment": "calls 0x4911e0", "area": "General"}
+{"va": "0x491f6d", "name": "Calls_491867 [0x491f6d]", "example": "push ebp; mov ebp,; push ecx; push ecx; push dword; lea ecx,", "comment": "calls 0x491867", "area": "General"}
+{"va": "0x491feb", "name": "Non_Type_Template [0x491feb]", "example": "push ebp; mov ebp,; sub esp,; push esi; mov esi,; xor ecx,", "comment": "string \"`non-type-template-parameter\"", "area": "General"}
+{"va": "0x49212c", "name": "Unsigned [0x49212c]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; mov al,; and dword", "comment": "string \"unsigned \"", "area": "General"}
+{"va": "0x4922c4", "name": "Calls_490E22 [0x4922c4]", "example": "push ebp; mov ebp,; mov eax,; mov al,; sub esp,; test al,", "comment": "calls 0x490e22", "area": "General"}
+{"va": "0x492342", "name": "Leaf_Helper [0x492342]", "example": "push ebp; mov ebp,; sub esp,; mov edx,; and dword; push esi", "comment": "no calls in head", "area": "General"}
+{"va": "0x492467", "name": "Calls_4907BB [0x492467]", "example": "push ebp; mov ebp,; mov eax,; sub esp,; cmp byte; push edi", "comment": "calls 0x4907bb", "area": "General"}
+{"va": "0x4925c6", "name": "Calls_491FEB [0x4925c6]", "example": "push ebp; mov ebp,; sub esp,; push 0x27; push dword; lea eax,", "comment": "calls 0x491feb", "area": "General"}
+{"va": "0x49262d", "name": "Calls_490E22 [0x49262d]", "example": "push ebp; mov ebp,; sub esp,; push esi; mov esi,; push dword", "comment": "calls 0x490e22", "area": "General"}
+{"va": "0x49277d", "name": "Calls_491867 [0x49277d]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x491867", "comment": "calls 0x491867", "area": "General"}
+{"va": "0x49281d", "name": "Template_Parameter [0x49281d]", "example": "push ebp; mov ebp,; push ecx; push ecx; mov eax,; mov al,", "comment": "string \"`template-parameter\"", "area": "General"}
+{"va": "0x492b28", "name": "Cli_Array [0x492b28]", "example": "push ebp; mov ebp,; mov eax,; sub esp,; cmp byte; je 0x492bec", "comment": "string \"cli::array<\"", "area": "General"}
+{"va": "0x492c15", "name": "Template_Parameter [0x492c15]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "string \"`template-parameter\"", "area": "General"}
+{"va": "0x49348f", "name": "Template_Parameter [0x49348f]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "string \"template-parameter-\"", "area": "General"}
+{"va": "0x493679", "name": "Calls_49348F [0x493679]", "example": "push ebp; mov ebp,; sub esp,; push esi; mov esi,; and dword", "comment": "calls 0x49348f", "area": "General"}
+{"va": "0x49376c", "name": "Cointerface [0x49376c]", "example": "push ebp; mov ebp,; mov eax,; sub esp,; push ebx; mov ecx,", "comment": "string \"cointerface \"", "area": "General"}
+{"va": "0x49386c", "name": "Calls_49333C [0x49386c]", "example": "push ebp; mov ebp,; mov eax,; cmp byte; jne 0x4938a1; inc eax", "comment": "calls 0x49333c", "area": "General"}
+{"va": "0x4938b2", "name": "Calls_490D66 [0x4938b2]", "example": "push ebp; mov ebp,; sub esp,; push 0; call 0x490d66; add esp,", "comment": "calls 0x490d66", "area": "General"}
+{"va": "0x493944", "name": "Calls_49081E [0x493944]", "example": "push ebp; mov ebp,; sub esp,; and dword; push esi; mov esi,", "comment": "calls 0x49081e", "area": "General"}
+{"va": "0x494486", "name": "Anonymous_Namespace [0x494486]", "example": "push ebp; mov ebp,; sub esp,; push esi; mov esi,; test dword", "comment": "string \"`anonymous namespace'\"", "area": "General"}
+{"va": "0x494922", "name": "Calls_491F4B [0x494922]", "example": "push ebp; mov ebp,; mov eax,; mov cl,; sub esp,; test cl,", "comment": "calls 0x491f4b", "area": "General"}
+{"va": "0x494c63", "name": "Volatile [0x494c63]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; mov al,; push ebx", "comment": "string \"volatile \"", "area": "General"}
+{"va": "0x495147", "name": "Leaf_Helper [0x495147]", "example": "push ebp; mov ebp,; sub esp,; and dword; and dword; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x495293", "name": "Calls_491841 [0x495293]", "example": "push ebp; mov ebp,; push ecx; push ecx; mov eax,; mov al,", "comment": "calls 0x491841", "area": "General"}
+{"va": "0x495540", "name": "Leaf_Helper [0x495540]", "example": "push ebp; mov ebp,; mov eax,; mov al,; sub esp,; test al,", "comment": "no calls in head", "area": "General"}
+{"va": "0x495a05", "name": "Calls_49118A [0x495a05]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x49118a", "comment": "calls 0x49118a", "area": "General"}
+{"va": "0x495ab6", "name": "Calls_490D7F [0x495ab6]", "example": "push ebp; mov ebp,; sub esp,; push esi; xor esi,; push esi", "comment": "calls 0x490d7f", "area": "General"}
+{"va": "0x495b1a", "name": "Calls_4984CD [0x495b1a]", "example": "push ebp; mov ebp,; push ecx; push ecx; mov eax,; push esi", "comment": "calls 0x4984cd", "area": "General"}
+{"va": "0x49654e", "name": "Leaf_Helper [0x49654e]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push esi; mov esi,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4966c8", "name": "Calls_4822F1 [0x4966c8]", "example": "push ebp; mov ebp,; sub esp,; push dword; or dword; lea ecx,", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x496717", "name": "Calls_499F27 [0x496717]", "example": "push ebp; mov ebp,; push ecx; or dword; push 0; push dword", "comment": "calls 0x499f27", "area": "General"}
+{"va": "0x496747", "name": "Calls_4822F1 [0x496747]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4969ae", "name": "User_Dll [0x4969ae]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push esi; push edi", "comment": "string \"USER32.DLL\"", "area": "General"}
+{"va": "0x496c32", "name": "Calls_4822F1 [0x496c32]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x496cb1", "name": "Calls_4822F1 [0x496cb1]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x496d29", "name": "Calls_4822F1 [0x496d29]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x496da1", "name": "Calls_4822F1 [0x496da1]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x496e19", "name": "Calls_4822F1 [0x496e19]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x496e98", "name": "Calls_4822F1 [0x496e98]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x496f10", "name": "Calls_4822F1 [0x496f10]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x496f88", "name": "Calls_4822F1 [0x496f88]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x497007", "name": "Calls_4822F1 [0x497007]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x497086", "name": "Calls_4822F1 [0x497086]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x497105", "name": "Calls_4822F1 [0x497105]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x497233", "name": "Leaf_Helper [0x497233]", "example": "push ebp; mov ebp,; push ecx; push ecx; mov eax,; xor eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x49736e", "name": "Calls_4822F1 [0x49736e]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4973a9", "name": "Leaf_Helper [0x4973a9]", "example": "push ebp; mov ebp,; push ecx; push ecx; mov eax,; xor eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4974e6", "name": "Calls_4822F1 [0x4974e6]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4975c0", "name": "Leaf_Helper [0x4975c0]", "example": "push ebp; mov ebp,; sub esp,; push ebx; xor ebx,; test byte", "comment": "no calls in head", "area": "General"}
+{"va": "0x497e9b", "name": "Calls_497DCF [0x497e9b]", "example": "push ebp; mov ebp,; push ecx; or dword; push 0; lea eax,", "comment": "calls 0x497dcf", "area": "General"}
+{"va": "0x497ecb", "name": "Calls_497DCF [0x497ecb]", "example": "push ebp; mov ebp,; push 1; push dword; push dword; push dword", "comment": "calls 0x497dcf", "area": "General"}
+{"va": "0x497ee9", "name": "Calls_4822F1 [0x497ee9]", "example": "push ebp; mov ebp,; sub esp,; push esi; push dword; lea ecx,", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x498116", "name": "Calls_4822F1 [0x498116]", "example": "push ebp; mov ebp,; sub esp,; push ebx; xor ebx,; cmp dword", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x498298", "name": "Calls_4A0DB8 [0x498298]", "example": "push ebp; mov ebp,; push ebx; push esi; push edi; push ebp", "comment": "calls 0x4a0db8", "area": "General"}
+{"va": "0x4989af", "name": "Leaf_Helper [0x4989af]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x498d51", "name": "Calls_4822F1 [0x498d51]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x498d94", "name": "Leaf_Helper [0x498d94]", "example": "push ebp; mov ebp,; push ecx; push ecx; mov eax,; xor eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x498f4c", "name": "Calls_4822F1 [0x498f4c]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x498fbb", "name": "Leaf_Helper [0x498fbb]", "example": "push ebp; mov ebp,; sub esp,; test esi,; movzx ecx,; movzx edx,", "comment": "no calls in head", "area": "General"}
+{"va": "0x49964a", "name": "Leaf_Helper [0x49964a]", "example": "push ebp; mov ebp,; sub esp,; push ebx; mov ebx,; push esi", "comment": "no calls in head", "area": "General"}
+{"va": "0x4998ce", "name": "Leaf_Helper [0x4998ce]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push esi; mov esi,", "comment": "no calls in head", "area": "General"}
+{"va": "0x499b92", "name": "Leaf_Helper [0x499b92]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x499fdb", "name": "Calls_4822F1 [0x499fdb]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push esi; push edi", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x49a0e2", "name": "Calls_4822F1 [0x49a0e2]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push esi; push edi", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x49a1e9", "name": "Calls_4822F1 [0x49a1e9]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push esi; push edi", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x49a59d", "name": "Leaf_Helper [0x49a59d]", "example": "push ebp; mov ebp,; push ecx; push ebx; push esi; mov esi,", "comment": "no calls in head", "area": "General"}
+{"va": "0x49a616", "name": "Leaf_Helper [0x49a616]", "example": "push ebp; mov ebp,; push ecx; push ebx; movsx eax,; cmp eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x49a9fc", "name": "Leaf_Helper [0x49a9fc]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x49ae59", "name": "Calls_4822F1 [0x49ae59]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; push ebx; push dword", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x49b008", "name": "Calls_49AE59 [0x49b008]", "example": "push ebp; mov ebp,; push dword; push 0; push dword; push dword", "comment": "calls 0x49ae59", "area": "General"}
+{"va": "0x49b043", "name": "Calls_49AE59 [0x49b043]", "example": "push ebp; mov ebp,; push 0; push dword; push dword; push dword", "comment": "calls 0x49ae59", "area": "General"}
+{"va": "0x49b090", "name": "Leaf_Helper [0x49b090]", "example": "push ebp; mov ebp,; push esi; xor eax,; push eax; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x49b0d6", "name": "Leaf_Helper [0x49b0d6]", "example": "push ebp; mov ebp,; xor eax,; push ebx; xor ebx,; inc eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x49b14a", "name": "Calls_486310 [0x49b14a]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "calls 0x486310", "area": "General"}
+{"va": "0x49b22c", "name": "Calls_484B71 [0x49b22c]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "calls 0x484b71", "area": "General"}
+{"va": "0x49b2c2", "name": "Calls_49B1DF [0x49b2c2]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "calls 0x49b1df", "area": "General"}
+{"va": "0x49b334", "name": "Calls_484B71 [0x49b334]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "calls 0x484b71", "area": "General"}
+{"va": "0x49b504", "name": "Norwegian_Nynorsk [0x49b504]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "string \"Norwegian-Nynorsk\"", "area": "General"}
+{"va": "0x49e465", "name": "Leaf_Helper [0x49e465]", "example": "push ebp; mov ebp,; push ecx; and dword; push ebx; mov ebx,", "comment": "no calls in head", "area": "General"}
+{"va": "0x49e530", "name": "Leaf_Helper [0x49e530]", "example": "push ebp; mov ebp,; push esi; xor eax,; push eax; push eax", "comment": "no calls in head", "area": "General"}
+{"va": "0x49e58a", "name": "Leaf_Helper [0x49e58a]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x49e913", "name": "Calls_4822F1 [0x49e913]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x49e953", "name": "Calls_4822F1 [0x49e953]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push dword; lea ecx,", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x49ea4b", "name": "Calls_49E953 [0x49ea4b]", "example": "push ebp; mov ebp,; cmp dword; jne 0x49ea5d; pop ebp; jmp 0x4a049f", "comment": "calls 0x49e953", "area": "General"}
+{"va": "0x49eabf", "name": "Calls_484F14 [0x49eabf]", "example": "push ebp; mov ebp,; push ecx; xor eax,; test edi,; mov ecx,", "comment": "calls 0x484f14", "area": "General"}
+{"va": "0x49eb1c", "name": "Calls_485920 [0x49eb1c]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; push ebx; xor ebx,", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x49edb8", "name": "Leaf_Helper [0x49edb8]", "example": "push ebp; mov ebp,; sub esp,; xor eax,; push ebx; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x49ee55", "name": "Calls_4A0637 [0x49ee55]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "calls 0x4a0637", "area": "General"}
+{"va": "0x49eff8", "name": "Leaf_Helper [0x49eff8]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push esi; mov esi,", "comment": "no calls in head", "area": "General"}
+{"va": "0x49f248", "name": "Leaf_Helper [0x49f248]", "example": "push ebp; mov ebp,; sub esp,; cmp word; jne 0x49f25c; and dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x49f2ca", "name": "Leaf_Helper [0x49f2ca]", "example": "push ebp; mov ebp,; push ecx; cmp word; jne 0x49f2da; xor eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x49f36c", "name": "Calls_495B1A [0x49f36c]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push esi; push edi", "comment": "calls 0x495b1a", "area": "General"}
+{"va": "0x49f625", "name": "Calls_485933 [0x49f625]", "example": "push ebp; mov ebp,; sub esp,; mov edx,; push esi; mov esi,", "comment": "calls 0x485933", "area": "General"}
+{"va": "0x49fe31", "name": "Leaf_Helper [0x49fe31]", "example": "push ebp; mov ebp,; mov edx,; mov eax,; sar eax,; and edx,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a0093", "name": "Calls_4822F1 [0x4a0093]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push dword; lea ecx,", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4a0166", "name": "Calls_485920 [0x4a0166]", "example": "push ebp; mov ebp,; push esi; xor esi,; cmp dword; jne 0x4a01a4", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x4a01b6", "name": "Calls_481090 [0x4a01b6]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "calls 0x481090", "area": "General"}
+{"va": "0x4a01fd", "name": "Leaf_Helper [0x4a01fd]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a03af", "name": "Calls_4822F1 [0x4a03af]", "example": "push ebp; mov ebp,; sub esp,; push ebx; xor ebx,; cmp dword", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4a049f", "name": "Calls_485920 [0x4a049f]", "example": "push ebp; mov ebp,; push esi; xor esi,; cmp dword; jne 0x4a04e6", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x4a054b", "name": "Calls_4822F1 [0x4a054b]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push dword; lea ecx,", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4a0699", "name": "Leaf_Helper [0x4a0699]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a08bd", "name": "Calls_4822F1 [0x4a08bd]", "example": "push ebp; mov ebp,; sub esp,; push dword; lea ecx,; call 0x4822f1", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4a0933", "name": "Calls_4822F1 [0x4a0933]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push esi; push dword", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4a0a80", "name": "Leaf_Helper [0x4a0a80]", "example": "push ebp; mov ebp,; push edi; push esi; push ebx; mov ecx,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a1269", "name": "Leaf_Helper [0x4a1269]", "example": "push ebp; mov ebp,; sub esp,; and esp,; fstp qword; cvttsd2si eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a1296", "name": "Leaf_Helper [0x4a1296]", "example": "push ebp; mov ebp,; sub esp,; and esp,; fld st(0); fst dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a1310", "name": "Calls_4822F1 [0x4a1310]", "example": "push ebp; mov ebp,; sub esp,; push esi; push dword; lea ecx,", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4a1381", "name": "Calls_4822F1 [0x4a1381]", "example": "push ebp; mov ebp,; sub esp,; push esi; push dword; lea ecx,", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4a1417", "name": "Calls_4A1EA3 [0x4a1417]", "example": "push ebp; mov ebp,; push ecx; push ecx; cmp dword; push dword", "comment": "calls 0x4a1ea3", "area": "General"}
+{"va": "0x4a14a7", "name": "Calls_4822F1 [0x4a14a7]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push esi; push edi", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4a1614", "name": "Leaf_Helper [0x4a1614]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a16e2", "name": "Calls_4A1614 [0x4a16e2]", "example": "push ebp; mov ebp,; push 0; push dword; push dword; push dword", "comment": "calls 0x4a1614", "area": "General"}
+{"va": "0x4a1700", "name": "Calls_4822F1 [0x4a1700]", "example": "push ebp; mov ebp,; sub esp,; push esi; push edi; push dword", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4a1a71", "name": "Calls_4A1700 [0x4a1a71]", "example": "push ebp; mov ebp,; push 0; push dword; push dword; push dword", "comment": "calls 0x4a1700", "area": "General"}
+{"va": "0x4a1a8f", "name": "Calls_4822F1 [0x4a1a8f]", "example": "push ebp; mov ebp,; sub esp,; push ebx; push esi; push edi", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4a1b84", "name": "Leaf_Helper [0x4a1b84]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a1c58", "name": "Leaf_Helper [0x4a1c58]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a1d50", "name": "Calls_4A1C58 [0x4a1d50]", "example": "push ebp; mov ebp,; push 0; push dword; push dword; push dword", "comment": "calls 0x4a1c58", "area": "General"}
+{"va": "0x4a1d6e", "name": "Calls_4A1B84 [0x4a1d6e]", "example": "push ebp; mov ebp,; mov eax,; cmp eax,; je 0x4a1dd8; cmp eax,", "comment": "calls 0x4a1b84", "area": "General"}
+{"va": "0x4a1df4", "name": "Calls_4A1D6E [0x4a1df4]", "example": "push ebp; mov ebp,; push 0; push dword; push dword; push dword", "comment": "calls 0x4a1d6e", "area": "General"}
+{"va": "0x4a1e3e", "name": "Kernel [0x4a1e3e]", "example": "push ebp; mov ebp,; sub esp,; fld qword; fstp qword; fld qword", "comment": "string \"KERNEL32\"", "area": "General"}
+{"va": "0x4a1ea3", "name": "Calls_4822F1 [0x4a1ea3]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4a1f5c", "name": "Calls_4822F1 [0x4a1f5c]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4a2016", "name": "Calls_4822F1 [0x4a2016]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "calls 0x4822f1", "area": "General"}
+{"va": "0x4a210c", "name": "Calls_485920 [0x4a210c]", "example": "push ebp; mov ebp,; mov ecx,; push ebx; push esi; mov esi,", "comment": "calls 0x485920", "area": "General"}
+{"va": "0x4a21c9", "name": "Leaf_Helper [0x4a21c9]", "example": "push ebp; mov ebp,; push ecx; mov edx,; movzx eax,; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a2284", "name": "Calls_4A21C9 [0x4a2284]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "calls 0x4a21c9", "area": "General"}
+{"va": "0x4a241f", "name": "Calls_4A5801 [0x4a241f]", "example": "push ebp; mov ebp,; mov eax,; mov ecx,; and eax,; and ecx,", "comment": "calls 0x4a5801", "area": "General"}
+{"va": "0x4a2559", "name": "Leaf_Helper [0x4a2559]", "example": "push ebp; mov ebp,; push ecx; push ecx; and dword; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a2687", "name": "Leaf_Helper [0x4a2687]", "example": "push ebp; mov ebp,; mov eax,; cdq; and edx,; sub esp,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a271f", "name": "Leaf_Helper [0x4a271f]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; movzx ecx,; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a2c48", "name": "Leaf_Helper [0x4a2c48]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; movzx ecx,; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a318a", "name": "Leaf_Helper [0x4a318a]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; movzx ecx,; push ebx", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a36cc", "name": "Leaf_Helper [0x4a36cc]", "example": "push ebp; mov ebp,; sub esp,; mov ecx,; movzx edx,; and dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a37e9", "name": "Leaf_Helper [0x4a37e9]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a3a5d", "name": "Leaf_Helper [0x4a3a5d]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a3d66", "name": "Leaf_Helper [0x4a3d66]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a44ec", "name": "Leaf_Helper [0x4a44ec]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a4db2", "name": "Leaf_Helper [0x4a4db2]", "example": "push ebp; mov ebp,; push ecx; push ecx; mov eax,; push esi", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a5108", "name": "Leaf_Helper [0x4a5108]", "example": "push ebp; mov ebp,; push ecx; push ecx; push esi; wait", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a53c8", "name": "Leaf_Helper [0x4a53c8]", "example": "push ebp; mov ebp,; mov edx,; test edx,; je 0x4a540e; wait", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a5420", "name": "Leaf_Helper [0x4a5420]", "example": "push ebp; mov ebp,; push ecx; push ecx; fnstsw word; fnclex", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a5e0d", "name": "Leaf_Helper [0x4a5e0d]", "example": "push ebp; mov ebp,; sub esp,; mov eax,; xor eax,; mov dword", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a5ff0", "name": "Leaf_Helper [0x4a5ff0]", "example": "push ebp; mov ebp,; push ecx; wait; fnstcw word; mov eax,", "comment": "no calls in head", "area": "General"}
+{"va": "0x4a606d", "name": "Calls_484394 [0x4a606d]", "example": "push ebp; mov ebp,; push ecx; cmp dword; je 0x4a6080; stmxcsr dword", "comment": "calls 0x484394", "area": "General"}

@@ -1,0 +1,60 @@
+{
+ "game_sha256": "41a59702083f288d49afddf2306e89a6aba8df28bbbb228c55c2a463230e82b2",
+ "patches": [
+  {
+   "name": "mastery CH cap 330",
+   "file": "SR_GameServer.exe",
+   "sha256_guard": "41a59702083f288d49afddf2306e89a6aba8df28bbbb228c55c2a463230e82b2",
+   "va": "0x0059C5E6",
+   "kind": "imm32",
+   "orig_bytes": "3d 4a 01 00 00",
+   "note": "cmp eax,330 region (verify: 3D 4A 01 00 00). Change imm32."
+  },
+  {
+   "name": "mastery EU cap 240.0",
+   "file": "SR_GameServer.exe",
+   "sha256_guard": "41a59702083f288d49afddf2306e89a6aba8df28bbbb228c55c2a463230e82b2",
+   "va": "0x00B46130",
+   "kind": "double64",
+   "orig_bytes": "00 00 00 00 00 00 6e 40",
+   "note": "double 240.0 in .rdata."
+  },
+  {
+   "name": "Country validator allow 2",
+   "file": "SR_GameServer.exe",
+   "sha256_guard": "41a59702083f288d49afddf2306e89a6aba8df28bbbb228c55c2a463230e82b2",
+   "va": "0x006A3DA5",
+   "kind": "imm8",
+   "orig_bytes": "80 bb 88 00 00 00 ff",
+   "note": "LIVE patched FF; orig file had 02. Guard matches CURRENT live bytes."
+  },
+  {
+   "name": "Country append gate (32B vec)",
+   "file": "SR_GameServer.exe",
+   "sha256_guard": "41a59702083f288d49afddf2306e89a6aba8df28bbbb228c55c2a463230e82b2",
+   "va": "0x006A2B7C",
+   "kind": "branch",
+   "orig_bytes": "73 2e",
+   "note": "SUPERSEDED Oct-2026: jb(72) would fail CH/EU (inverts). Correct fix is per-element gate seed (cmp imm 02->03 at 0x6A2B71). Keep reverted."
+  },
+  {
+   "name": "Country clamp cave (16B vec)",
+   "file": "SR_GameServer.exe",
+   "sha256_guard": "41a59702083f288d49afddf2306e89a6aba8df28bbbb228c55c2a463230e82b2",
+   "va": "0x006A2A3A",
+   "kind": "cave5",
+   "orig_bytes": "74 0c 8b 46 0c",
+   "note": "live=reverted orig 5 bytes. Cave 0x009BB7B0 documented; silent-exit via consistency check."
+  }
+  ,
+  {
+   "name": "Country per-element gate allow 2 (DRY-RUN)",
+   "file": "SR_GameServer.exe",
+   "sha256_guard": "41a59702083f288d49afddf2306e89a6aba8df28bbbb228c55c2a463230e82b2",
+   "va": "0x006A2B71",
+   "kind": "imm8",
+   "orig_bytes": "02",
+   "note": "STAGED Oct-2026, NOT APPLIED. cmp al,2->cmp al,3 at 0x6A2B70 (live 3C 02 verified). Allows Country 0,1,2, still fails 3+. Sibling gate 0x6A2A2A already cmp al,3 (reference). DO NOT APPLY until vector fill proven (see Vector_Extend_Analysis.md)."
+  }
+ ]
+}
